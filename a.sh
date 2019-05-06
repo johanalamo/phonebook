@@ -3,7 +3,7 @@ blink="echo -n -e \e[5m";
 green="echo -n -e \e[42m";
 red="echo -n -e \e[41m";
 log_file="log.txt";
-app="com.example.johan.garbarino";
+app="com.example.johan.phonebook";
 activity="ProductListActivity"
 
 if [ $1 = "com" ]; then
@@ -12,8 +12,8 @@ if [ $1 = "com" ]; then
         fecha=`date`;
         echo "">$log_file;
         echo "==${fecha}=======">>$log_file;
-        #./gradlew assembleDebug --stacktrace --debug 2>>$log_file 1>>$log_file; 
-        ./gradlew assembleDebug --stacktrace 2>>$log_file 1>>$log_file; 
+        #./gradlew assembleDebug --stacktrace --debug 2>>$log_file 1>>$log_file;
+        ./gradlew assembleDebug --stacktrace 2>>$log_file 1>>$log_file;
         r=$?;
         if [ $r -eq 0 ]; then
             $green;
@@ -24,7 +24,7 @@ if [ $1 = "com" ]; then
             $red;
             echo -n "$fecha: Compilation ERROR";
             $normal;
-            echo 
+            echo
             echo "ERROR: ";
             cat $log_file | head -50;
             echo $fecha;
@@ -48,8 +48,8 @@ fi
 echo "activity: $activity";
 #exit;
 if [ $1 = "run" ]; then
-    ./gradlew assembleDebug && 
-    ./gradlew installDebug && 
+    ./gradlew assembleDebug &&
+    ./gradlew installDebug &&
     adb shell cmd package uninstall -k $app &&
     #el anterior siempre da $?=0
     adb -d install "`pwd`/app/build/outputs/apk/debug/app-debug.apk" &&
@@ -75,9 +75,9 @@ fi;
 
 if [ $1 = "log" ]; then
     p=`adb shell ps -A | grep ${app} | awk '{ print $2 }'`
-    echo "PID = $p"; 
+    echo "PID = $p";
     if [ "$p" != "" ]; then
-      adb shell logcat --pid=$p | cut -c 32-   
+      adb shell logcat --pid=$p | cut -c 32-
     else
       echo "not opened";
     fi;
@@ -99,13 +99,13 @@ if [ $1 = "downloaddata" ]; then
          curl -s "${url}${p}/reviews/" | jq '.' > ${dir}reviews${p}.txt
 			echo "product id: ${products_id[$i]}"  ;
       done;
-      
+
       echo;
       echo "downloading images";
       cat "${dir}*.txt"
-      
+
 #      cat resources/*.txt | egrep "\"url\"|\"image_url\"" > ${dir}list_images.txt
-      
+
       exit
    exit
 fi;
@@ -113,11 +113,11 @@ if [ $1 = "downloadimages" ]; then
       dir="resources/"
       dirimages=${dir}images
       mkdir $dirimages
-      
+
       for i in `cat ${dir}list_images.txt`; do
          wget $i;
       done
-   
+
    exit
 fi;
 

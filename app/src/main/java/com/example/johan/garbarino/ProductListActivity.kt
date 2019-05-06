@@ -2,7 +2,7 @@ package com.example.johan.garbarino
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.widget.GridLayoutManager
+import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.arch.lifecycle.Observer
 import  com.example.johan.garbarino.viewmodel.ProductListViewModel
@@ -25,7 +25,7 @@ class ProductListActivity : AppCompatActivity() {
 
       viewModel = ViewModelProviders.of(this).get(ProductListViewModel::class.java)
       viewModel.getProductList().observe(this,
-               Observer { 
+               Observer {
                   productList -> createRecyclerViewProductList(productList!!.items)
                   }
       )
@@ -33,7 +33,7 @@ class ProductListActivity : AppCompatActivity() {
    }
 
    fun createRecyclerViewProductList(data:Array<Product>){
-      viewManager = GridLayoutManager(this, 2) //LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+      viewManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
       viewAdapter = ProductListAdapter(data, this)
       recyclerView = findViewById <RecyclerView>(R.id.rviewProducts).apply {
          setHasFixedSize(false);
