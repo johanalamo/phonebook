@@ -1,0 +1,61 @@
+{
+  "xid": "dfe199bd8c",
+  "description": "Horno eléctrico ATMA 23 Lts HG2310E ",
+  "summary": "Capacidad: 23 Lts. Potencia: 1380 W. Grill eléctrico. Termostato. Timer. Alto: 29 cm. Ancho: 46 cm. Profundidad: 35 cm. ",
+  "brand": "atma",
+  "original_brand": "Atma",
+  "list_price": 2799,
+  "price": 2249,
+  "discount": 20,
+  "enabled_for_sale": true,
+  "preferred_installment": {
+    "base_price": 2249,
+    "installments": 12,
+    "interest": 2.61,
+    "surcharge": 704.38,
+    "final_price": 2953.38,
+    "installment_price": 246.11,
+    "eapr": 52.88,
+    "tfc": 70.1,
+    "description": "En 12 cuotas fijas de $246,11",
+    "gateway_installments": 12,
+    "visa_financing": true,
+    "repayment": 0
+  },
+  "model": "HG2310E ",
+  "category_id": 4289,
+  "main_image": {
+    "max_width": 1000,
+    "url": "//d3lfzbr90tctqz.cloudfront.net/epi/resource/r/horno-electrico-atma-23-lts-hg2310e/569dffd210894a36ce78e0c38eeed8fecc28930c3543faf06201713425b062d9"
+  },
+  "virtual": false,
+  "categories": [
+    4289
+  ],
+  "category": "Hornos Eléctricos",
+  "product_tags": [],
+  "price_matching_discount": 0,
+  "price_without_vat": 1776.71,
+  "vat_percentage": 21,
+  "resources": {
+    "images": [
+      {
+        "max_width": 1000,
+        "url": "//d3lfzbr90tctqz.cloudfront.net/epi/resource/r/horno-electrico-atma-23-lts-hg2310e/569dffd210894a36ce78e0c38eeed8fecc28930c3543faf06201713425b062d9"
+      },
+      {
+        "max_width": 1000,
+        "url": "//d3lfzbr90tctqz.cloudfront.net/epi/resource/r/horno-electrico-atma-23-lts-hg2310e/4f6c2165f4ac2aba0cc6da37cefe4636afe634e82e6008602e28eda529e5ba03"
+      },
+      {
+        "max_width": 1000,
+        "url": "//d3lfzbr90tctqz.cloudfront.net/epi/resource/r/horno-electrico-atma-23-lts-hg2310e/d193aa334e96ca141dfc4d6b6a344858dd6da6294bcd5020fb38c79f18910318"
+      },
+      {
+        "max_width": 1000,
+        "url": "//d3lfzbr90tctqz.cloudfront.net/epi/resource/r/horno-electrico-atma-23-lts-hg2310e/b050f7858c69afae49a214d083b6ebeb065284b8d605fddbe26cd79a7d9c815a"
+      }
+    ],
+    "videos": []
+  }
+}

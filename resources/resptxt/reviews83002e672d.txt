@@ -1,0 +1,1219 @@
+{
+  "items": [
+    {
+      "id": "83002e672d",
+      "review_statistics": {
+        "average_overall_rating": 3.98,
+        "rating_distribution": [
+          {
+            "rating_value": 5,
+            "count": 56
+          },
+          {
+            "rating_value": 4,
+            "count": 42
+          },
+          {
+            "rating_value": 3,
+            "count": 20
+          },
+          {
+            "rating_value": 1,
+            "count": 10
+          },
+          {
+            "rating_value": 2,
+            "count": 4
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "id": "1050835405",
+          "usernickname": "Luis V.",
+          "title": "Para recomendar no te vas a arrpentir",
+          "review_text": "La verdad es tal cual dice que funciona, y la aclaracion que me hicieron al retirar el producto no fregar los numeros del costado, es decir las medidas asi no se borran",
+          "rating": 4,
+          "submission_time": "2018-12-18T13:02:45.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050583621",
+          "usernickname": "Mariel C.",
+          "title": "Muy práctica",
+          "review_text": "La rapidez con la q hierve el agua",
+          "rating": 5,
+          "submission_time": "2018-12-09T17:41:57.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050527078",
+          "usernickname": "Maria R.",
+          "title": "bien",
+          "review_text": "anda correctamente como debería.",
+          "rating": 3,
+          "submission_time": "2018-12-07T15:32:29.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050525476",
+          "usernickname": "Monica S.",
+          "title": "Pava",
+          "review_text": "Es liviana y silenciosa, muy linda",
+          "rating": 5,
+          "submission_time": "2018-12-07T14:34:05.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050524401",
+          "usernickname": "Pablo G.",
+          "title": "Excelente Precio calidad!",
+          "review_text": "Muy buena relacion precio calidad! Excelente producto",
+          "rating": 4,
+          "submission_time": "2018-12-07T13:54:09.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050523314",
+          "usernickname": "Maria N.",
+          "title": "Perilla",
+          "review_text": "Creí que traía perilla para regular temperatura",
+          "rating": 3,
+          "submission_time": "2018-12-07T12:58:53.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050523126",
+          "usernickname": "Gloria P.",
+          "title": "Hermoso color",
+          "review_text": "Muy vistoso el producto solo que algunas veces se traba la tapa para cargar agua ..",
+          "rating": 4,
+          "submission_time": "2018-12-07T12:52:16.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050497090",
+          "usernickname": "Dario N.",
+          "title": "Muy buena",
+          "review_text": "La primera vez que tengo una PE. Calienta rápidamente el agua. Tiene el corte automático y si necesitas no tan caliente el agua lo cortas manualmente.",
+          "rating": 5,
+          "submission_time": "2018-12-06T13:48:18.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050496664",
+          "usernickname": "Emilia N.",
+          "title": "muy practico",
+          "review_text": "Sencillo y practico!! funciona re bien!",
+          "rating": 5,
+          "submission_time": "2018-12-06T13:27:45.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050496417",
+          "usernickname": "Maria A.",
+          "title": "Falla la tapa de apertura",
+          "review_text": "El producto estéticamente es lindo pero la tapa no funciona bien para abrirla",
+          "rating": 2,
+          "submission_time": "2018-12-06T13:17:22.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050496215",
+          "usernickname": "Gisel C.",
+          "title": "Excelente!",
+          "review_text": "Funcional y de muy buena calidad!",
+          "rating": 5,
+          "submission_time": "2018-12-06T13:09:17.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050496193",
+          "usernickname": "Oscar A.",
+          "title": "Anda bien",
+          "review_text": "La luz azul lo único malo es que cuesta abrir la tapa . Para cargar el agua",
+          "rating": 2,
+          "submission_time": "2018-12-06T13:08:38.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050496183",
+          "usernickname": "Carina A.",
+          "title": "Práctica y eficiente",
+          "review_text": "Muy buen producto. Cumple eficazmente con su función",
+          "rating": 4,
+          "submission_time": "2018-12-06T13:08:10.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050446353",
+          "usernickname": "Franco M.",
+          "title": "Previo/calidad",
+          "review_text": "Teniendo en cuenta que es económica es de esperar que no tenga ciertas prestaciones como termostato. Esta muy bien para cualquier hogar u oficina. Recomendable",
+          "rating": 4,
+          "submission_time": "2018-12-04T19:18:19.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050415745",
+          "usernickname": "Andrea B.",
+          "title": "pava electrica",
+          "review_text": "Para el uso que le damos excelente proporcion producto-calidad. Calienta muy rapido el agua.",
+          "rating": 4,
+          "submission_time": "2018-12-03T22:44:33.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050399304",
+          "usernickname": "Cristina V.",
+          "title": "No anda la el selector de temperatura",
+          "review_text": "No anda el selector de temperatura,y no habré siempre la tapa",
+          "rating": 1,
+          "submission_time": "2018-12-03T14:50:34.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050395510",
+          "usernickname": "Stella R.",
+          "title": "Buenisima",
+          "review_text": "Es rapida...comoda...y economica...no consume mucho de energia",
+          "rating": 5,
+          "submission_time": "2018-12-03T13:17:03.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050341787",
+          "usernickname": "Diego A.",
+          "title": "Muy bueno en relación precio productp",
+          "review_text": "Practica, buen producto y calienta muy rapido.",
+          "rating": 4,
+          "submission_time": "2018-12-01T14:21:44.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050336008",
+          "usernickname": "Andrea A.",
+          "title": "Hace mucho ruido... pero anda...",
+          "review_text": "Hace ruido cuando calienta... mucho ruido",
+          "rating": 3,
+          "submission_time": "2018-12-01T10:34:48.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050327873",
+          "usernickname": "Jose I.",
+          "title": "Excelente",
+          "review_text": "Muy buena calidad en este producto",
+          "rating": 5,
+          "submission_time": "2018-11-30T22:21:33.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050326946",
+          "usernickname": "Francisco M.",
+          "title": "funciona muy bien",
+          "review_text": "Hasta ahora que ya ha pasado alrededor de un mes el producto funciona sin problemas y a la perfeccion, excelente en cuanto precio y calidad.",
+          "rating": 5,
+          "submission_time": "2018-11-30T21:30:59.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050304654",
+          "usernickname": "Gabriel L.",
+          "title": "Excelente calidad",
+          "review_text": "Muy buena calidad. Muy útil. Dj",
+          "rating": 5,
+          "submission_time": "2018-11-30T13:05:07.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050303595",
+          "usernickname": "Viviana V.",
+          "title": "Muy buena",
+          "review_text": "Es buena marca y bien toda las funciones",
+          "rating": 5,
+          "submission_time": "2018-11-30T12:23:47.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050257753",
+          "usernickname": "Maria N.",
+          "title": "Excelente producto",
+          "review_text": "Funciona bien, sirve para calentar agua para el mate y para te.",
+          "rating": 5,
+          "submission_time": "2018-11-29T19:20:51.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050254554",
+          "usernickname": "Ailin C.",
+          "title": "Rapidisima",
+          "review_text": "Hace un poco de ruido y no tiene corte para mate pero es super rápida y grande",
+          "rating": 4,
+          "submission_time": "2018-11-29T18:39:08.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050247883",
+          "usernickname": "Maria C.",
+          "title": "muy buen producto",
+          "review_text": "funciona perfecto!! lo q esperaba",
+          "rating": 4,
+          "submission_time": "2018-11-29T14:51:17.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050245537",
+          "usernickname": "Ezequiel P.",
+          "title": "Mal especificado",
+          "review_text": "La app te dice que tiene corte automático. La caja te dice corte automático. Y no tiene. Malisimo. Es buena la pava. Pero esta mal caratulada las funciones. Lo devolvi",
+          "rating": 1,
+          "submission_time": "2018-11-29T13:23:52.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050244306",
+          "usernickname": "Natalia P.",
+          "title": "Bien",
+          "review_text": "En general correcta, sólo que la tapa no funciona del todo bien.",
+          "rating": 4,
+          "submission_time": "2018-11-29T12:29:53.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050244230",
+          "usernickname": "Maria O.",
+          "title": "Buena relacion precio-calidad",
+          "review_text": "Está bien. el plastico no es el mejor, pero funciona perfectamente",
+          "rating": 4,
+          "submission_time": "2018-11-29T12:26:46.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050244058",
+          "usernickname": "Maria G.",
+          "title": "Buena",
+          "review_text": "Es práctica. Salvo que cada tanto se traba la tapa!!! Y obvio cuesta abrirla!!",
+          "rating": 4,
+          "submission_time": "2018-11-29T12:20:40.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1050181320",
+          "usernickname": "Hilda G.",
+          "title": "Muy práctica",
+          "review_text": "Solo lamento que no tenga temperatura para mate",
+          "rating": 4,
+          "submission_time": "2018-11-28T13:01:41.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1049979355",
+          "usernickname": "Alicia P.",
+          "title": "bárbara",
+          "review_text": "capacidad justa,material,color...",
+          "rating": 5,
+          "submission_time": "2018-11-20T17:43:36.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1049964206",
+          "usernickname": "Romina G.",
+          "title": "Espectacular",
+          "review_text": "Calienta muy bien  y muy recomendable",
+          "rating": 5,
+          "submission_time": "2018-11-20T05:31:53.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1049257300",
+          "usernickname": "Patricia W.",
+          "title": "Rapida",
+          "review_text": "Q se calienta bien rapido y sirve tanto para mate o cafe",
+          "rating": 4,
+          "submission_time": "2018-10-23T14:08:09.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1049079637",
+          "usernickname": "Osvaldo R.",
+          "title": "decepción",
+          "review_text": "al mes de comprarla cuesta abrir la tapa, plástico de muy mala calidad",
+          "rating": 2,
+          "submission_time": "2018-10-15T17:15:16.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1048832378",
+          "usernickname": "Maria B.",
+          "title": "Hermoso colorrr",
+          "review_text": "Nos sorprendimos con el color vintage hermosa pava!",
+          "rating": 5,
+          "submission_time": "2018-10-04T12:39:30.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1048733187",
+          "usernickname": "Maria Y.",
+          "title": "Bueno comodidad",
+          "review_text": "Un producto bueno y q da comodidad",
+          "rating": 4,
+          "submission_time": "2018-09-29T13:06:50.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1048678541",
+          "usernickname": "Jorge A.",
+          "title": "Excelente pava",
+          "review_text": "Cumple su función correctamente. Calienta rápidamente.",
+          "rating": 5,
+          "submission_time": "2018-09-27T19:00:23.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1048659971",
+          "usernickname": "Sebastian G.",
+          "title": "muy buena",
+          "review_text": "exelente calidad precio, funcion basica, comoda. estoy muy conforme",
+          "rating": 4,
+          "submission_time": "2018-09-26T20:20:08.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1048612102",
+          "usernickname": "Laura B.",
+          "title": "Satisfecha con la compra",
+          "review_text": "La presentación del producto. Muy útil.",
+          "rating": 3,
+          "submission_time": "2018-09-25T04:04:13.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1048370348",
+          "usernickname": "Elba P.",
+          "title": "MUY BUEN PRODUCTO FANTASTICO",
+          "review_text": "MUY BUEN PRODUCTO ..SE RELACIONA PRECIO-CALIDAD..ENTREGA INMEDIATA..MUY BUENA ATENCIÓN AL ENTREGAR EL PRODUCTO..TODO SALIO PERFECTO",
+          "rating": 5,
+          "submission_time": "2018-09-13T13:22:29.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1048208918",
+          "usernickname": "Norma S.",
+          "title": "Excelente!!!!!",
+          "review_text": "Increíble la rapidez de calentar el agua!! Ahorra tiempo y seguridad al no tener que controlar que el agua rompa el hervor.",
+          "rating": 5,
+          "submission_time": "2018-09-07T03:42:21.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1048208881",
+          "usernickname": "Gabriela B.",
+          "title": "Fantástica",
+          "review_text": "Muy fácil de usar ! Rápida en en hervir el agua y tiene un diseño cómodo y Liviano.",
+          "rating": 5,
+          "submission_time": "2018-09-07T03:33:33.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1048207234",
+          "usernickname": "Alejandro O.",
+          "title": "Muy práctica",
+          "review_text": "Es muy buen producto y práctico",
+          "rating": 5,
+          "submission_time": "2018-09-06T21:57:39.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1048204351",
+          "usernickname": "Ruben W.",
+          "title": "Muy buen producto",
+          "review_text": "Todo impecable el producto y atencion",
+          "rating": 5,
+          "submission_time": "2018-09-06T19:14:58.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1048198816",
+          "usernickname": "Enrique L.",
+          "title": "Muy bueno",
+          "review_text": "Práctico y sencillo de manejar",
+          "rating": 4,
+          "submission_time": "2018-09-06T16:34:55.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1048191707",
+          "usernickname": "Gerardo F.",
+          "title": "Mala calidad",
+          "review_text": "No recomiendo el producto. El plástico del que esta hecho no es muy durable.\r\nAdemás, la tapa tiene un mecanismo de cierre/apertura muy complicado.",
+          "rating": 2,
+          "submission_time": "2018-09-06T15:41:03.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1048180366",
+          "usernickname": "Rodolfo B.",
+          "title": "Funciona bien por el momento ,",
+          "review_text": "funciona ,  Atma es especialista en planchas , por lo tanto este proceso   no es muy diferente ,   as que debe seguir funcionando bien . \r\n lo bueno es que tiene una tapa grande que te permite limpiar el sarro que se le adhiere  en su interior ,  por la mala calidad de agua que tenemos en esta zona . \r\nRecomiendo no comprar Lavarropas Atma,",
+          "rating": 4,
+          "submission_time": "2018-09-06T14:14:22.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1048142568",
+          "usernickname": "Lucia D.",
+          "title": "Super útil",
+          "review_text": "Es muy simple, lo que necesitaba. Anda muy bien.",
+          "rating": 5,
+          "submission_time": "2018-09-04T23:15:29.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1048129682",
+          "usernickname": "Guillermo R.",
+          "title": "Buen producto !!!",
+          "review_text": "Simple, buena estética, buen precio... función accesible para mi requerimiento.",
+          "rating": 3,
+          "submission_time": "2018-09-04T13:48:39.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1048128627",
+          "usernickname": "Romina A.",
+          "title": "Excelente",
+          "review_text": "Es un producto genial, además de tener un precio super accesible es una pava muy linda y de marca reconocida. Me encantó",
+          "rating": 5,
+          "submission_time": "2018-09-04T13:00:36.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1048100008",
+          "usernickname": "Nadia L.",
+          "title": "Genial!",
+          "review_text": "Muy buen producto... cumple con su propósito",
+          "rating": 5,
+          "submission_time": "2018-09-03T02:28:38.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1048065440",
+          "usernickname": "Sebastian C.",
+          "title": "Acorde al Precio",
+          "review_text": "Pava electrica de acuerdo a la relacion precio calidad",
+          "rating": 3,
+          "submission_time": "2018-08-31T21:32:42.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1048059508",
+          "usernickname": "Larisa C.",
+          "title": "Práctica y económica",
+          "review_text": "Cumple con sus funciones de acuerdo a lo esperado. Tiene un diseño muy lindo. Seria perfecta si tuviera regulador de temperatura pero entiendo que ese seria otro precio",
+          "rating": 3,
+          "submission_time": "2018-08-31T15:55:35.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1048043367",
+          "usernickname": "Gustavo A.",
+          "title": "ok",
+          "review_text": "muy buen producto funciona muy bien",
+          "rating": 5,
+          "submission_time": "2018-08-30T20:13:26.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1048043348",
+          "usernickname": "Graciela B.",
+          "title": "Pava electirca",
+          "review_text": "La pava es buena en funcionamiento,pero la tapa es muy mal, se abre cuando quiere...",
+          "rating": 3,
+          "submission_time": "2018-08-30T20:12:24.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1048035325",
+          "usernickname": "Diaz S.",
+          "title": "Perfecto",
+          "review_text": "Como siempre los productos de Garbarino son excelencia!!!",
+          "rating": 5,
+          "submission_time": "2018-08-30T13:37:49.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1048033254",
+          "usernickname": "Mario C.",
+          "title": "Excelente",
+          "review_text": "Muy buen producto, funciona muy bien",
+          "rating": 5,
+          "submission_time": "2018-08-30T12:09:26.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1047478910",
+          "usernickname": "Daniel V.",
+          "title": "Buena",
+          "review_text": "Buena todo bien, sin fallas...",
+          "rating": 4,
+          "submission_time": "2018-08-04T17:53:59.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1047088421",
+          "usernickname": "Claudia G.",
+          "title": "Muy buena",
+          "review_text": "Es Simple, práctica y accesible",
+          "rating": 4,
+          "submission_time": "2018-07-20T01:04:54.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1047037154",
+          "usernickname": "Maria M.",
+          "title": "Práctica!!",
+          "review_text": "Es práctica y calienta rápido!",
+          "rating": 4,
+          "submission_time": "2018-07-17T21:47:13.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1047016386",
+          "usernickname": "Maria R.",
+          "title": "Superó expectativas :)",
+          "review_text": "Realmente lo compre por aprovechar el producto en oferta, y realmente es super práctico. En menos de 5 min calienta 1.7 lts (mac capacidad). Corte automático, si sos colgada como yo es una genialidad.  No ocupa lugar la base cuenta con cable que puede extenderse un poco más de la presentación que viene. Tiene filtro en pico. Manual claro y de fácil comprensión.",
+          "rating": 4,
+          "submission_time": "2018-07-17T07:10:07.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1047005449",
+          "usernickname": "Ruben T.",
+          "title": "Buen producto",
+          "review_text": "Tiene buen diseño, aunque un poco más ancha respecto de otros. El que tiene termostato también es interesante aunque un poco más caro.",
+          "rating": 3,
+          "submission_time": "2018-07-16T16:26:55.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1047001877",
+          "usernickname": "Maximiliano M.",
+          "title": "muy buen producto",
+          "review_text": "excelente producto! caliente muy rapido",
+          "rating": 5,
+          "submission_time": "2018-07-16T13:31:45.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1047000627",
+          "usernickname": "Patricia S.",
+          "title": "Bueno",
+          "review_text": "Es muy simple pero me sirve igual",
+          "rating": 3,
+          "submission_time": "2018-07-16T12:38:17.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046997214",
+          "usernickname": "Marisa P.",
+          "title": "Hermosa",
+          "review_text": "Me gustó el diseño .Es compacta\r\nFunciona perfecto!",
+          "rating": 5,
+          "submission_time": "2018-07-16T09:03:58.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046993010",
+          "usernickname": "Soledad R.",
+          "title": "muy buena",
+          "review_text": "muy rapido y eficiente funciona a la perfeccion",
+          "rating": 5,
+          "submission_time": "2018-07-16T00:29:16.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046992980",
+          "usernickname": "Sergio G.",
+          "title": "Mala  mala mala",
+          "review_text": "No cumple mis espectativas ! Hay mejores en el mismo precio",
+          "rating": 1,
+          "submission_time": "2018-07-16T00:23:11.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046990800",
+          "usernickname": "Simon L.",
+          "title": "Muy buena pava",
+          "review_text": "No pensé que fuese tan buena... Ningún problema con la pava la recomiendo totalmente aparte calienta el agua en muy poco tiempo",
+          "rating": 5,
+          "submission_time": "2018-07-15T20:28:46.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046987600",
+          "usernickname": "Cristian R.",
+          "title": "muy bueno",
+          "review_text": "muy buena pava , el precio es muy accesible.",
+          "rating": 4,
+          "submission_time": "2018-07-15T17:11:54.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046984092",
+          "usernickname": "Pamela G.",
+          "title": "Pava Philips",
+          "review_text": "Buen funcionamiento de la pava eléctrica",
+          "rating": 5,
+          "submission_time": "2018-07-15T13:23:41.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046982098",
+          "usernickname": "Nestor R.",
+          "title": "buen producto",
+          "review_text": "funciona correctamente, no hubo problemas",
+          "rating": 4,
+          "submission_time": "2018-07-15T11:34:10.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046976236",
+          "usernickname": "Marcela C.",
+          "title": "muy bueno",
+          "review_text": "el producto es muy bueno, tal como se mostraba en las publicacioness",
+          "rating": 4,
+          "submission_time": "2018-07-15T02:57:11.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046975910",
+          "usernickname": "Noelia G.",
+          "title": "Espectacular",
+          "review_text": "Muy buen producto super practico",
+          "rating": 4,
+          "submission_time": "2018-07-15T01:36:04.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046975760",
+          "usernickname": "Matias I.",
+          "title": "Cumple con lo que dice",
+          "review_text": "El botón para levantar la tapa nunca me anduvo bien del todo.",
+          "rating": 3,
+          "submission_time": "2018-07-15T01:05:30.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046969480",
+          "usernickname": "Sergio C.",
+          "title": "No me gusto",
+          "review_text": "Pensamos que se podia programar la temperatura, solamente hierve el agua. No tiene distintas funciones.",
+          "rating": 1,
+          "submission_time": "2018-07-14T17:08:23.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046955890",
+          "usernickname": "Carlos L.",
+          "title": "BUEN PRODUCTO",
+          "review_text": "FUNCIONA BIEN, CALIENTA RAPIDO.",
+          "rating": 4,
+          "submission_time": "2018-07-14T00:13:36.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046938271",
+          "usernickname": "Olga C.",
+          "title": "EXCELENTE",
+          "review_text": "Su funcion cumple con mis expectativas",
+          "rating": 5,
+          "submission_time": "2018-07-12T22:45:15.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046934719",
+          "usernickname": "Jose T.",
+          "title": "Malísima",
+          "review_text": "En cuanto la enchufe quedé sin luz en casa. La quise cambiar y me dijeron que toda la partida vino fallada. Solución??? Cambiarla por una q cuesta más del doble o quedarme con la q no sirve.... Pésima compra!!!",
+          "rating": 1,
+          "submission_time": "2018-07-12T18:21:20.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046910962",
+          "usernickname": "Jose M.",
+          "title": "EXELENTE PRODUCTO",
+          "review_text": "Mi opinion es que este producto es de muy buena calidad",
+          "rating": 4,
+          "submission_time": "2018-07-11T17:05:36.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046894535",
+          "usernickname": "Mirian C.",
+          "title": "muy buena",
+          "review_text": "ningún problema, funciona excelentemente!!!",
+          "rating": 5,
+          "submission_time": "2018-07-10T21:52:27.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046894423",
+          "usernickname": "Mariano A.",
+          "title": "Muy Buena",
+          "review_text": "producto en condiciones , hasta aquí funciona en forma correcta.",
+          "rating": 3,
+          "submission_time": "2018-07-10T21:43:46.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046893342",
+          "usernickname": "Clelia G.",
+          "title": "No resulta funcional",
+          "review_text": "No tiene control de temeraria ni corta antes de que hierva el agua. No es último para el mate. En la foto de La publicidad mostraban una con perilla temporizadora que no existe",
+          "rating": 1,
+          "submission_time": "2018-07-10T20:40:31.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046887802",
+          "usernickname": "Thelma L.",
+          "title": "muy buenA!",
+          "review_text": "pava muy buena. tiene funciones simples pero calienta en la temperatura adecuada",
+          "rating": 4,
+          "submission_time": "2018-07-10T16:37:51.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046886236",
+          "usernickname": "Dahyana C.",
+          "title": "Fantasticas funciones",
+          "review_text": "Excelente calidad del producto",
+          "rating": 5,
+          "submission_time": "2018-07-10T15:17:35.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046883282",
+          "usernickname": "Luis T.",
+          "title": "Muy buena",
+          "review_text": "Me salio genial muy buena cumple todo lo que queria y ademas el precio",
+          "rating": 5,
+          "submission_time": "2018-07-10T13:03:00.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046882506",
+          "usernickname": "Fabiana G.",
+          "title": "muy bueno",
+          "review_text": "si funciona ok ningun problema",
+          "rating": 4,
+          "submission_time": "2018-07-10T12:26:02.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046880291",
+          "usernickname": "Laura C.",
+          "title": "muy bueno",
+          "review_text": "el producto es genial , de muy buena calidad",
+          "rating": 5,
+          "submission_time": "2018-07-10T10:22:27.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046876139",
+          "usernickname": "Nancy V.",
+          "title": "Util",
+          "review_text": "Es muy linda, funciona muy bien, muy útil, el único inconveniente es que el botón que tiene en la tapa para abrir la misma, hay que presionarlo con mucha fuerza, a veces se traba y es muy difícil abrirla.",
+          "rating": 3,
+          "submission_time": "2018-07-10T06:13:59.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046875088",
+          "usernickname": "Miriam T.",
+          "title": "muy buena",
+          "review_text": "Excelente el sistema de luces, ya que asi se percibe si el agua calento o no",
+          "rating": 4,
+          "submission_time": "2018-07-10T04:02:19.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046874564",
+          "usernickname": "Elisa O.",
+          "title": "El sistema de la tapa muy malo",
+          "review_text": "Horrible el sistema de tapa que tiene u no tiene regulación  de temperatura",
+          "rating": 3,
+          "submission_time": "2018-07-10T01:35:30.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046868018",
+          "usernickname": "Julieta F.",
+          "title": "Excelente relación precio-calidad!",
+          "review_text": "Lo único malo es q no tiene regulador de temperatura. El resto sin problemas.",
+          "rating": 3,
+          "submission_time": "2018-07-09T17:56:28.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046863081",
+          "usernickname": "Carolina V.",
+          "title": "Buen funcionamiento",
+          "review_text": "Funciona muy bien!!! Calienta rápido.",
+          "rating": 5,
+          "submission_time": "2018-07-09T13:22:43.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046854606",
+          "usernickname": "Omar C.",
+          "title": "buenas funciones",
+          "review_text": "muy moderna  y precio accesible",
+          "rating": 4,
+          "submission_time": "2018-07-09T03:21:44.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046854493",
+          "usernickname": "Karen B.",
+          "title": "Fantastica",
+          "review_text": "Exelente .........................",
+          "rating": 5,
+          "submission_time": "2018-07-09T02:50:01.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046854273",
+          "usernickname": "Silvana M.",
+          "title": "muy práctica",
+          "review_text": "Pocas funciones pero práctica y económica",
+          "rating": 4,
+          "submission_time": "2018-07-09T01:53:16.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046854256",
+          "usernickname": "Silvia B.",
+          "title": "Muy buena",
+          "review_text": "¡Linda y calienta muy rápido!!",
+          "rating": 5,
+          "submission_time": "2018-07-09T01:49:36.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046854199",
+          "usernickname": "Virginia F.",
+          "title": "muy buena!",
+          "review_text": "es muy buena tanto en diseño como en precio!",
+          "rating": 5,
+          "submission_time": "2018-07-09T01:37:36.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046853668",
+          "usernickname": "Maria D.",
+          "title": "Pava electrica",
+          "review_text": "Muy buena calidad y bajo costo",
+          "rating": 5,
+          "submission_time": "2018-07-08T23:52:35.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046853106",
+          "usernickname": "German A.",
+          "title": "Muy buena",
+          "review_text": "Su presentación, color y funcionamiento",
+          "rating": 4,
+          "submission_time": "2018-07-08T22:38:42.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046848135",
+          "usernickname": "Felix L.",
+          "title": "excelente producto",
+          "review_text": "es muy bueno el producto y ocupa poco espacio",
+          "rating": 5,
+          "submission_time": "2018-07-08T17:28:40.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046845517",
+          "usernickname": "Betina C.",
+          "title": "Funciona bien! Básica",
+          "review_text": "No se puede regular la temperatura,pero funciona muy bien",
+          "rating": 3,
+          "submission_time": "2018-07-08T14:56:22.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046845118",
+          "usernickname": "Josefina S.",
+          "title": "Muy buen producto",
+          "review_text": "Excelente. Recomiendo el producto",
+          "rating": 5,
+          "submission_time": "2018-07-08T14:35:00.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046844054",
+          "usernickname": "Eduardo G.",
+          "title": "Muy práctico",
+          "review_text": "la facilidad de su funcionamiento",
+          "rating": 5,
+          "submission_time": "2018-07-08T13:35:04.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046843674",
+          "usernickname": "Alicia C.",
+          "title": "muy practica",
+          "review_text": "me resulta muy practica y rapida y segura",
+          "rating": 4,
+          "submission_time": "2018-07-08T13:19:57.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046842379",
+          "usernickname": "Gonzalo L.",
+          "title": "Funciona muy bien",
+          "review_text": "Excelente relación precio calidad.",
+          "rating": 4,
+          "submission_time": "2018-07-08T12:03:53.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046842193",
+          "usernickname": "Paula G.",
+          "title": "Pava eléctrica",
+          "review_text": "Muy buen producto y en perfecto estado",
+          "rating": 5,
+          "submission_time": "2018-07-08T11:50:18.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046841535",
+          "usernickname": "Emiliano B.",
+          "title": "Exelente prestaciones",
+          "review_text": "Exelente calidad y tamaño ......",
+          "rating": 4,
+          "submission_time": "2018-07-08T11:04:28.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046836187",
+          "usernickname": "Fernando G.",
+          "title": "Era lo esperado",
+          "review_text": "Pava a buen precio, altamente recomendable",
+          "rating": 4,
+          "submission_time": "2018-07-08T02:38:21.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046836033",
+          "usernickname": "Pablo O.",
+          "title": "Opinión sobre la pava",
+          "review_text": "Muy buen producto hasta ahora todo bien",
+          "rating": 5,
+          "submission_time": "2018-07-08T02:12:22.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046835712",
+          "usernickname": "Jessica V.",
+          "title": "Mala!!!",
+          "review_text": "Tarda en calentar el agua y para abrir la tapa hay q presionar el botón 20 veces.",
+          "rating": 1,
+          "submission_time": "2018-07-08T01:15:55.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046835571",
+          "usernickname": "Diana S.",
+          "title": "contenta",
+          "review_text": "la recomiendo, funciona bien, estèticamente es muy agradable",
+          "rating": 5,
+          "submission_time": "2018-07-08T01:02:11.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046835220",
+          "usernickname": "Jose A.",
+          "title": "muy bueno",
+          "review_text": "para el uso familiar es bueno, nosotros la usamos para hacer cafe, te, etc",
+          "rating": 5,
+          "submission_time": "2018-07-08T00:16:49.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046835026",
+          "usernickname": "Cristian J.",
+          "title": "una buena pava",
+          "review_text": "Es rápida. Calienta hasta hervir. Y no se apaga sola hasta un tiempo largo.\r\nEs buena opción para el trabajo. Buena y\r\n\r\n barata",
+          "rating": 4,
+          "submission_time": "2018-07-07T23:56:40.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046833759",
+          "usernickname": "Marcela R.",
+          "title": "Hierve el agua rapidisimo....",
+          "review_text": "Lo unico le faltaria seria que tuviera perilla para tenperatura del.mate.",
+          "rating": 4,
+          "submission_time": "2018-07-07T22:13:57.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046833744",
+          "usernickname": "Hermelinda A.",
+          "title": "Menos buena",
+          "review_text": "No corta cuando cuando entra en ebullición",
+          "rating": 1,
+          "submission_time": "2018-07-07T22:12:51.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046833447",
+          "usernickname": "Delia G.",
+          "title": "Bueno solo q el cable del enchufe es corto",
+          "review_text": "Buen producto, solo q el cable es muy corto",
+          "rating": 3,
+          "submission_time": "2018-07-07T21:52:14.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046832898",
+          "usernickname": "Marianela H.",
+          "title": "Muy buena",
+          "review_text": "Muy buena es rápida en calentar",
+          "rating": 5,
+          "submission_time": "2018-07-07T21:21:02.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046832473",
+          "usernickname": "Vanina C.",
+          "title": "Muy buena",
+          "review_text": "Calienta muy rápido. Y es muy practica",
+          "rating": 5,
+          "submission_time": "2018-07-07T21:00:44.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046832140",
+          "usernickname": "Carlos V.",
+          "title": "Todo ok",
+          "review_text": "Conforme cálida precio todo ok",
+          "rating": 4,
+          "submission_time": "2018-07-07T20:46:49.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046831577",
+          "usernickname": "Elsa B.",
+          "title": "Genial",
+          "review_text": "Excelente, desde que la recibimos, no dejamos de usarla!",
+          "rating": 5,
+          "submission_time": "2018-07-07T20:18:35.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046831397",
+          "usernickname": "Omar B.",
+          "title": "Buena calidad",
+          "review_text": "Materiales, terminación e iluminación.\r\nTIENE EL CABLE MUY CORTO, LE FALTA 0,5 m MÁS.",
+          "rating": 4,
+          "submission_time": "2018-07-07T20:09:09.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046831272",
+          "usernickname": "Ramona O.",
+          "title": "No me gusta mucho porque no tiene regular de tempe",
+          "review_text": "Bueno , es mi culpa xq no me fijé si tenía regulador de temperaturas  ,estaba necesitando una pava para mate",
+          "rating": 3,
+          "submission_time": "2018-07-07T20:02:23.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046831251",
+          "usernickname": "Diego M.",
+          "title": "Muy buena marca",
+          "review_text": "Compre otra para regalar porque la marca es muy buena!!\r\nAdemás la app de garbarino es muy completa,podes ver las distintas formas de pago y demás sin tener que comprar si o si\r\n En garbarino compre muchas veces y no me fallo,lo sigo eligiendo!!",
+          "rating": 5,
+          "submission_time": "2018-07-07T20:01:20.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046828775",
+          "usernickname": "Mirta C.",
+          "title": "BASICA",
+          "review_text": "El sistema de la tapa se rompe invariablemente- No tiene para regular temperatura-",
+          "rating": 1,
+          "submission_time": "2018-07-07T17:53:17.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046827980",
+          "usernickname": "Marcos M.",
+          "title": "Excelente funcionamiento",
+          "review_text": "La funcionalidad que tiene es muy buena!",
+          "rating": 5,
+          "submission_time": "2018-07-07T17:04:58.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046824945",
+          "usernickname": "Carina A.",
+          "title": "Excelente",
+          "review_text": "Tiene lo justo y necesario. Perfecta relacion producto precio.",
+          "rating": 5,
+          "submission_time": "2018-07-07T14:15:40.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046824587",
+          "usernickname": "Noemi J.",
+          "title": "Hierve el agua no tiene interruptor",
+          "review_text": "En verdad no me percaté que no tiene interruptor, hierve el agua",
+          "rating": 1,
+          "submission_time": "2018-07-07T13:59:29.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1046822447",
+          "usernickname": "Santiago Z.",
+          "title": "Muy practica lastima que no posee termostato",
+          "review_text": "Esta buena, tiene buena cantidad pero no posee termostato y tenes que ir probando",
+          "rating": 3,
+          "submission_time": "2018-07-07T12:22:30.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1045348009",
+          "usernickname": "Silvia A.",
+          "title": "Excelente",
+          "review_text": "Además de su estética impecable, cumple su función",
+          "rating": 5,
+          "submission_time": "2018-05-04T11:52:14.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1045320672",
+          "usernickname": "Valeria L.",
+          "rating": 5,
+          "submission_time": "2018-05-03T00:42:27.000+00:00",
+          "product_id": "83002e672d"
+        },
+        {
+          "id": "1045045783",
+          "usernickname": "Marcela L.",
+          "rating": 3,
+          "submission_time": "2018-04-20T18:20:40.000+00:00",
+          "product_id": "83002e672d"
+        }
+      ],
+      "total_review_count": 132
+    }
+  ]
+}

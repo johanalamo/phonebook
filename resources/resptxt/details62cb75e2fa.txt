@@ -1,0 +1,57 @@
+{
+  "xid": "62cb75e2fa",
+  "description": "Tostadora ATMA TO8013E",
+  "summary": "Potencia: 750 W. Paredes Frías. Funciones Disponibles: Calentar, Descongelar, Tostar. Bandeja Recogemigas. Enrollacable. ",
+  "brand": "atma",
+  "original_brand": "Atma",
+  "list_price": 799,
+  "price": 799,
+  "discount": 0,
+  "enabled_for_sale": true,
+  "preferred_installment": {
+    "base_price": 799,
+    "installments": 12,
+    "interest": 2.61,
+    "surcharge": 250.24,
+    "final_price": 1049.24,
+    "installment_price": 87.43,
+    "eapr": 52.88,
+    "tfc": 70.1,
+    "description": "En 12 cuotas fijas de $87,43",
+    "gateway_installments": 12,
+    "visa_financing": true,
+    "repayment": 0
+  },
+  "model": "TO8013E",
+  "category_id": 4311,
+  "main_image": {
+    "max_width": 1000,
+    "url": "//d3lfzbr90tctqz.cloudfront.net/epi/resource/r/tostadora-atma-to8013e/97ae407e6ec524295b59e9c12f5bc811a65a53b6e8d58e4262c8dfe5a31609fc"
+  },
+  "virtual": false,
+  "categories": [
+    4311
+  ],
+  "category": "Tostadoras",
+  "product_tags": [],
+  "price_matching_discount": 0,
+  "price_without_vat": 631.21,
+  "vat_percentage": 21,
+  "resources": {
+    "images": [
+      {
+        "max_width": 1000,
+        "url": "//d3lfzbr90tctqz.cloudfront.net/epi/resource/r/tostadora-atma-to8013e/97ae407e6ec524295b59e9c12f5bc811a65a53b6e8d58e4262c8dfe5a31609fc"
+      },
+      {
+        "max_width": 1000,
+        "url": "//d3lfzbr90tctqz.cloudfront.net/epi/resource/r/tostadora-atma-to8013e/4fd3863396fd6e9925999590773f1e23c9f04c6a4f00ad496c9e727d82c9df23"
+      },
+      {
+        "max_width": 1000,
+        "url": "//d3lfzbr90tctqz.cloudfront.net/epi/resource/r/tostadora-atma-to8013e/31f73d976353c40438addfd3a090424f09e7f1f13e71b481b5deece923590285"
+      }
+    ],
+    "videos": []
+  }
+}

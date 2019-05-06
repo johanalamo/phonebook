@@ -1,0 +1,61 @@
+Puntos a mejorar:
+
+    * NO est+a haciendo la garga de los reviews, se está yendo directamente por la data local
+
+    * No se muestra una vista de "cargando" mientras se traen los datos de la API, tanto en el listado como en el detalle.
+
+    * No se muestra una vista de "error" si no se traen los datos de la API, tanto en el listado como en el detalle.
+
+    * Falta el botón "Up" en el detalle para volver atrás.
+
+    * Faltó restringir a tres reviews como máximo.
+
+    * Faltó lógica para eliminar aquellos productos si no viene precio o si no viene el nombre.
+
+    * No se manejó el caso para cuando no hay reviews de un producto. Ej: http://garbarino-mock-api.s3-website-us-east-1.amazonaws.com/products/fac1a6c3d1/reviews
+
+    * Organizar las clases en paquetes.
+
+    * No acceder a la API directo desde el activity. Usar una capa intermedia, ejemplo Repository.
+
+    * Borrar código comentado. Ej: Dentro de MainActivity.createRecyclerViewProductList
+
+    * Eliminar clase Data: No usar variables o métodos globales para guardar los datos que se traen de la API. Es decir, evitar Data.productList, Data.productListLoaded. En una app grande esto sería inmanejable. Variables/métodos globales es una mala práctica en cualquier lenguaje/plataforma.
+
+    * Revisar el uso de !!. En varios casos no es necesario y es un code smell en Kotlin.
+
+    * Mejorar uso de Retrofit2. Todos los servicios deberían tener la misma base url ("http://garbarino-mock-api.s3-website-us-east-1.amazonaws.com/") y cada uno tener un path distinto en el @GET, ejemplo: @GET("products"), @GET("products/{id}") y usar @Path.
+
+    * En lugar de preguntar por response.code() == 200 se debería usar response.isSuccessful.
+
+    * Todas las clases dentro de ProductListResponse.kt, ProductReviewsResponse.kt, ProductDetailsResponse.kt deberían ser data class.
+
+    * ¿Por qué se crearon archivos solo para xhdpi? Esos mismos archivos hubiesen servido también para todas las densidades.
+
+    * Mejorar en layout_details_activity.xml: Se usó RecyclerView dentro de ScrollView que no es considerado una buena práctica. Una alternativa es usar un solo RecyclerView para toda la pantalla y manejar dos tipos diferentes, por ejemplo, PRODUCT_TYPE donde se muestran los detalles de producto y REVIEW_TYPE donde se muestra un review.
+
+    * AdapterProductList no debe lanzar activities. El adapter debería tener un listener como variable. El activity debería implementar dicho Listener. Cuando se hace click en lugar de lanzar un activity, llamar a un método de dicho listener y que en la activity se lance la activity de detalle.
+
+    * Revisar todos los warnings cuando se abre con Android Studio.
+
+    * En el manifest:
+
+        * Solo una de las activities debería ser MAIN y LAUNCHER.
+
+        * El permiso CALL_PHONE no es necesario.
+
+    * En el build.gradle, prestar atención a las dependencias:
+
+        * No deben repetirse las dependencias. Ej. Retrofit 2.0.2 y Retrofit 2.0.0.
+
+        * Eliminar las dependencias que no se usan. Ej. Butterknife.
+
+    * Usar strings.xml con parámetros en lugar de hardcodear strings. Ej: res.discount.toString() + "% OFF"
+
+    * Revisar visibilidad (privado/público/etc.) de atributos y métodos.
+
+    * Revisar algunas variables en lugar de var podrían ser val.
+
+    * Revisar .gitignore, se descargaron archivos que no son necesarios, por ejemplo: archivo.txt de 7 MB
+
+ 

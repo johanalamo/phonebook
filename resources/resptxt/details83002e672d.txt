@@ -1,0 +1,61 @@
+{
+  "xid": "83002e672d",
+  "description": "Pava Eléctrica ATMA PE5106E Blanco",
+  "summary": "Capacidad: 1.7 Lts. Indicador de Nivel de Agua. Corte Automático. Base Removible. Color: Blanco. Alto: 22.8 cm. Diámetro: 17 cm. ",
+  "brand": "atma",
+  "original_brand": "Atma",
+  "list_price": 899,
+  "price": 689,
+  "discount": 23,
+  "enabled_for_sale": true,
+  "preferred_installment": {
+    "base_price": 689,
+    "installments": 12,
+    "interest": 2.61,
+    "surcharge": 215.79,
+    "final_price": 904.79,
+    "installment_price": 75.39,
+    "eapr": 52.88,
+    "tfc": 70.1,
+    "description": "En 12 cuotas fijas de $75,39",
+    "gateway_installments": 12,
+    "visa_financing": true,
+    "repayment": 0
+  },
+  "model": "PE5106E",
+  "category_id": 4312,
+  "main_image": {
+    "max_width": 1000,
+    "url": "//d3lfzbr90tctqz.cloudfront.net/epi/resource/r/pava-electrica-atma-pe5106e-blanco/b0732f6005a7791ec8794c96a4feaa68d585b4e70d3f73c475db1a0f1056745f"
+  },
+  "virtual": false,
+  "categories": [
+    4312
+  ],
+  "category": "Pavas Eléctricas",
+  "product_tags": [],
+  "price_matching_discount": 0,
+  "price_without_vat": 544.31,
+  "vat_percentage": 21,
+  "resources": {
+    "images": [
+      {
+        "max_width": 1000,
+        "url": "//d3lfzbr90tctqz.cloudfront.net/epi/resource/r/pava-electrica-atma-pe5106e-blanco/b0732f6005a7791ec8794c96a4feaa68d585b4e70d3f73c475db1a0f1056745f"
+      },
+      {
+        "max_width": 1000,
+        "url": "//d3lfzbr90tctqz.cloudfront.net/epi/resource/r/pava-electrica-atma-pe5106e-blanco/c7718cc58d9d2cad950ffe9f88d3f699d8f6e4ea067119ab4300b5a4706d03c8"
+      },
+      {
+        "max_width": 1000,
+        "url": "//d3lfzbr90tctqz.cloudfront.net/epi/resource/r/pava-electrica-atma-pe5106e-blanco/6424dd0ea0170c8dfebfea9ac89de4f0ef034e364d139b770d909f1f19a1048f"
+      },
+      {
+        "max_width": 1000,
+        "url": "//d3lfzbr90tctqz.cloudfront.net/epi/resource/r/pava-electrica-atma-pe5106e-blanco/3b5d099882f9a81e847b08d945b3e3c5f5f59763dc3fa4a307ac2842280b9745"
+      }
+    ],
+    "videos": []
+  }
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/linearLayoutOneProduct"
+                android:orientation="vertical"
+                style="@style/stlProductListItem"
+>
+    <android.support.constraint.ConstraintLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+
+    >
+        <RatingBar
+                android:id="@+id/rtbarProductDetails"
+                android:numStars="5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:scaleY="0.7"
+                android:scaleX="0.7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:isIndicator="true"
+        />
+        <TextView
+                android:layout_marginLeft="@dimen/twoSep"
+                android:text=""
+                style="@style/stlProductDetailsStars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtEstrellas"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/rtbarProductDetails"
+        />
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+            android:text="TextView"
+            style="@style/stlProductDetailsDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDescription"
+    />
+    <TextView
+            android:text="TextView"
+            style="@style/stlProductDetailsPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPrice"
+    />
+
+    <LinearLayout
+            android:id="@+id/lytDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:orientation="horizontal"
+    >
+        <TextView
+                android:text="TextView"
+                style="@style/stlProductDetailsPriceList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtListPrice"
+        />
+        <Space
+                android:layout_width="@dimen/threeSep"
+               android:layout_height="0dp"/>
+        <TextView
+                android:text="TextView"
+                style="@style/stlProductDetailsDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtDiscount"
+        />
+    </LinearLayout>
+
+</LinearLayout>

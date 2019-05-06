@@ -1,0 +1,57 @@
+{
+  "xid": "fac1a6c3d1",
+  "description": "Lavarropas Automático Drean 5 KG CONCEPT 5.05 V1 Blanco",
+  "summary": "Tipo de Carga: Automático Carga Superior. Tipo de Tecnología: Tradicional. Capacidad de Lavado: 5 kg. Velocidad de Centrífugado: 500 rpm. ",
+  "brand": "drean",
+  "original_brand": "Drean",
+  "list_price": 9599,
+  "price": 7699,
+  "discount": 20,
+  "enabled_for_sale": true,
+  "preferred_installment": {
+    "base_price": 7699,
+    "installments": 12,
+    "interest": 1.89,
+    "surcharge": 1746.13,
+    "final_price": 9445.13,
+    "installment_price": 787.09,
+    "eapr": 37.43,
+    "tfc": 48.34,
+    "description": "En 12 cuotas fijas de $787,09",
+    "gateway_installments": 7,
+    "visa_financing": false,
+    "repayment": 0
+  },
+  "model": "CONCEPT 5.05 V1",
+  "category_id": 4298,
+  "main_image": {
+    "max_width": 1000,
+    "url": "//d3lfzbr90tctqz.cloudfront.net/epi/resource/r/lavarropas-automatico-drean-5-kg-concept-5.05-v1-blanco/18125a5111609f25787a0fe43ba91dbca5f3fd36d575ee6ede509bca502f7018"
+  },
+  "virtual": false,
+  "categories": [
+    4298
+  ],
+  "category": "Lavarropas",
+  "product_tags": [],
+  "price_matching_discount": 0,
+  "price_without_vat": 6082.21,
+  "vat_percentage": 21,
+  "resources": {
+    "images": [
+      {
+        "max_width": 1000,
+        "url": "//d3lfzbr90tctqz.cloudfront.net/epi/resource/r/lavarropas-automatico-drean-5-kg-concept-5.05-v1-blanco/68ed2f7c817931ad87a36c153845840a6a434f376f95a1e262b54087f171a460"
+      },
+      {
+        "max_width": 1000,
+        "url": "//d3lfzbr90tctqz.cloudfront.net/epi/resource/r/lavarropas-automatico-drean-5-kg-concept-5.05-v1-blanco/18125a5111609f25787a0fe43ba91dbca5f3fd36d575ee6ede509bca502f7018"
+      },
+      {
+        "max_width": 1000,
+        "url": "//d3lfzbr90tctqz.cloudfront.net/epi/resource/r/lavarropas-automatico-drean-5-kg-concept-5.05-v1-blanco/d26989c0fd70a3d9630a13e6dcad9f5d5a6f05a432e0d6aab0abdc024b0da303"
+      }
+    ],
+    "videos": []
+  }
+}
