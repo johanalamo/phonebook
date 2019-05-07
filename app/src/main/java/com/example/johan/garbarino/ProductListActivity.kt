@@ -5,11 +5,12 @@ import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.arch.lifecycle.Observer
-import  com.example.johan.garbarino.viewmodel.ProductListViewModel
+import com.example.johan.garbarino.viewmodel.ProductListViewModel
 import android.arch.lifecycle.ViewModelProviders
 import android.widget.Toast
 import com.example.johan.garbarino.adapter.ProductListAdapter
-import com.example.johan.garbarino.response.Product
+import com.example.johan.garbarino.response.ProductListResponse
+import android.os.SystemClock
 
 class ProductListActivity : AppCompatActivity() {
 
@@ -22,17 +23,17 @@ class ProductListActivity : AppCompatActivity() {
    override fun onCreate(savedInstanceState: Bundle?) {
       super.onCreate(savedInstanceState)
       setContentView(R.layout.layout_main_activity)
-
+      SystemClock.sleep(1000)
       viewModel = ViewModelProviders.of(this).get(ProductListViewModel::class.java)
       viewModel.getProductList().observe(this,
                Observer {
-                  productList -> createRecyclerViewProductList(productList!!.items)
+                  productList -> createRecyclerViewProductList(productList!!)
                   }
       )
       viewModel.loadProductListData()
    }
 
-   fun createRecyclerViewProductList(data:Array<Product>){
+   fun createRecyclerViewProductList(data:ProductListResponse){
       viewManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
       viewAdapter = ProductListAdapter(data, this)
       recyclerView = findViewById <RecyclerView>(R.id.rviewProducts).apply {

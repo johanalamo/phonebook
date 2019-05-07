@@ -2,32 +2,72 @@ package com.example.johan.garbarino.response
 
 import com.google.gson.annotations.SerializedName
 
+typealias ProductListResponse = Array<Product>
+//data class ProductListResponse = Array<Product>
 
-class ProductListResponse {
+class Product {
+  @SerializedName("id")
+  var id: String? = ""
 
-    @SerializedName("items")
-    var items: Array<Product> = arrayOf()
+  @SerializedName("name")
+  val name: String? = ""
+
+  @SerializedName("companyName")
+  val companyName: String? = ""
+
+  @SerializedName("isFavorite")
+  val isFavorite: Boolean? = false
+
+  @SerializedName("smallImageURL")
+  val smallImageURL: String? = ""
+
+  @SerializedName("largeImageURL")
+  val largeImageURL: String? = ""
+
+  @SerializedName("emailAddress")
+  val emailAddress: String? = ""
+
+  @SerializedName("birthdate")
+  val birthdate: String? = ""
+
+  @SerializedName("phone")
+  var phone: Phone? = Phone()
+
+  @SerializedName("address")
+  var address: Address? = Address()
 
 }
 
 
-class Product {
+class Phone {
 
-    @SerializedName("id")
-    var id: String? = ""
+    @SerializedName("work")
+    var work: String? = ""
 
-    @SerializedName("description")
-    val description: String? = ""
+    @SerializedName("home")
+    val home: String? = ""
 
-    @SerializedName("image_url")
-    val image_url: String? = ""
+    @SerializedName("mobile")
+    val mobile: String? = ""
 
-    @SerializedName("price")
-    val price: Int? = 0
+}
 
-    @SerializedName("list_price")
-    val list_price: Int? = 0
 
-    @SerializedName("discount")
-    val discount: Int? = 0
+class Address {
+
+    @SerializedName("street")
+    var street: String? = ""
+
+    @SerializedName("city")
+    val city: String? = ""
+
+    @SerializedName("state")
+    val state: String? = ""
+
+    @SerializedName("country")
+    val country: String? = ""
+
+    @SerializedName("zipCode")
+    val zipCode: String? = ""
+
 }

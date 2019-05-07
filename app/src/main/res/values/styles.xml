@@ -24,6 +24,11 @@
         <item name="android:layout_gravity">center_horizontal</item>
     </style>
 
+    <style name="stlImgStar">
+        <item name="android:layout_height">@dimen/sizeImgStar</item>
+        <item name="android:layout_width">@dimen/sizeImgStar</item>
+    </style>
+
     <style name="stlImgProductDetails">
         <item name="android:layout_height">@dimen/sizeImgProductDetails</item>
         <item name="android:layout_width">@dimen/sizeImgProductDetails</item>

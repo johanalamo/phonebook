@@ -4,6 +4,8 @@ green="echo -n -e \e[42m";
 red="echo -n -e \e[41m";
 log_file="log.txt";
 app="com.example.johan.phonebook";
+pkg="com.example.johan.garbarino";
+#activity="PlayLocalGameActivity"
 activity="ProductListActivity"
 
 if [ $1 = "com" ]; then
@@ -50,11 +52,11 @@ echo "activity: $activity";
 if [ $1 = "run" ]; then
     ./gradlew assembleDebug &&
     ./gradlew installDebug &&
-    adb shell cmd package uninstall -k $app &&
+    adb shell cmd package uninstall -k "${app}" &&
     #el anterior siempre da $?=0
     adb -d install "`pwd`/app/build/outputs/apk/debug/app-debug.apk" &&
     #anterior manejarla con $? 0->exito   otro-> fall{o
-    adb shell am start -n "${app}/${app}.${activity}" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER;
+    adb shell am start -n "${app}/${pkg}.${activity}" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER;
     date;
     exit;
 fi;
@@ -63,12 +65,12 @@ if [ $1 = "install" ]; then
     #el anterior siempre da $?=0
     adb -d install "`pwd`/app/build/outputs/apk/debug/app-debug.apk" &&
     #anterior manejarla con $? 0->exito   otro-> fall{o
-    adb shell am start -n "${app}/${app}.${activity}" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER;
+    adb shell am start -n "${app}/${pkg}.${activity}" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER;
     exit;
 fi;
 if [ $1 = "start" ]; then
 #    adb -d install "`pwd`/app/build/outputs/apk/debug/app-debug.apk" &&
-    adb shell am start -n "${app}/${app}.${activity}"  -a android.intent.action.MAIN -c android.intent.category.LAUNCHER;
+    adb shell am start -n "${app}/${pkg}.${activity}"  -a android.intent.action.MAIN -c android.intent.category.LAUNCHER;
 #    sleep 1s;
     exit;
 fi;
@@ -126,15 +128,44 @@ echo "unrecognized option";
 exit;
 
 
-http://garbarino-mock-api.s3-website-us-east-1.amazonaws.com/products/0982a08485/
-http://garbarino-mock-api.s3-website-us-east-1.amazonaws.com/products/3d77bc3a98/
-http://garbarino-mock-api.s3-website-us-east-1.amazonaws.com/products/a20b55dd53/
-http://garbarino-mock-api.s3-website-us-east-1.amazonaws.com/products/5b119b7e68/
-http://garbarino-mock-api.s3-website-us-east-1.amazonaws.com/products/fac1a6c3d1/
-http://garbarino-mock-api.s3-website-us-east-1.amazonaws.com/products/83002e672d/
-http://garbarino-mock-api.s3-website-us-east-1.amazonaws.com/products/8f1dcc0c42/
-http://garbarino-mock-api.s3-website-us-east-1.amazonaws.com/products/62cb75e2fa/
-http://garbarino-mock-api.s3-website-us-east-1.amazonaws.com/products/dfe199bd8c/
-http://garbarino-mock-api.s3-website-us-east-1.amazonaws.com/products/f6f8b547a5/
 
-https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&AppId=2e65127e909e178d0af311a81f39948c
+
+adb install-multiple -r -t /home/johan/androidprojects/threeinline2/app/build/intermediates/split-apk/debug/dep/dependencies.apk /home/johan/androidprojects/threeinline2/app/build/intermediates/split-apk/debug/slices/slice_2.apk /home/johan/androidprojects/threeinline2/app/build/intermediates/split-apk/debug/slices/slice_9.apk /home/johan/androidprojects/threeinline2/app/build/intermediates/split-apk/debug/slices/slice_0.apk /home/johan/androidprojects/threeinline2/app/build/intermediates/split-apk/debug/slices/slice_1.apk /home/johan/androidprojects/threeinline2/app/build/intermediates/split-apk/debug/slices/slice_3.apk /home/johan/androidprojects/threeinline2/app/build/intermediates/split-apk/debug/slices/slice_4.apk /home/johan/androidprojects/threeinline2/app/build/intermediates/split-apk/debug/slices/slice_5.apk /home/johan/androidprojects/threeinline2/app/build/intermediates/split-apk/debug/slices/slice_7.apk /home/johan/androidprojects/threeinline2/app/build/intermediates/split-apk/debug/slices/slice_6.apk /home/johan/androidprojects/threeinline2/app/build/intermediates/split-apk/debug/slices/slice_8.apk /home/johan/androidprojects/threeinline2/app/build/intermediates/instant-run-apk/debug/app-debug.apk /home/johan/androidprojects/threeinline2/app/build/intermediates/resources/instant-run/debug/resources-debug.apk
+adb shell am start -n "threeinline.alamo.com.threeinlinedos/threeinline.alamo.com.threeinline.MenuActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+
+
+adb install-multiple -r -t /home/johan/androidprojects/threeinline2/app/build/intermediates/split-apk/debug/dep/dependencies.apk /home/johan/androidprojects/threeinline2/app/build/intermediates/split-apk/debug/slices/slice_1.apk /home/johan/androidprojects/threeinline2/app/build/intermediates/split-apk/debug/slices/slice_2.apk /home/johan/androidprojects/threeinline2/app/build/intermediates/split-apk/debug/slices/slice_0.apk /home/johan/androidprojects/threeinline2/app/build/intermediates/split-apk/debug/slices/slice_5.apk /home/johan/androidprojects/threeinline2/app/build/intermediates/split-apk/debug/slices/slice_4.apk /home/johan/androidprojects/threeinline2/app/build/intermediates/split-apk/debug/slices/slice_3.apk /home/johan/androidprojects/threeinline2/app/build/intermediates/split-apk/debug/slices/slice_6.apk /home/johan/androidprojects/threeinline2/app/build/intermediates/split-apk/debug/slices/slice_7.apk /home/johan/androidprojects/threeinline2/app/build/intermediates/split-apk/debug/slices/slice_9.apk /home/johan/androidprojects/threeinline2/app/build/intermediates/split-apk/debug/slices/slice_8.apk /home/johan/androidprojects/threeinline2/app/build/intermediates/instant-run-apk/debug/app-debug.apk /home/johan/androidprojects/threeinline2/app/build/intermediates/resources/instant-run/debug/resources-debug.apk
+
+
+-------
+
+
+D/AndroidRuntime: Shutting down VM
+E/AndroidRuntime: FATAL EXCEPTION: main
+    Process: threeinline.alamo.com.threeinlinedos, PID: 19308
+    java.lang.RuntimeException: Unable to start activity ComponentInfo{threeinline.alamo.com.threeinlinedos/threeinline.alamo.com.threeinline.PlayLocalGameActivity}: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.Float
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2955)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3030)
+        at android.app.ActivityThread.-wrap11(Unknown Source:0)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1696)
+        at android.os.Handler.dispatchMessage(Handler.java:105)
+        at android.os.Looper.loop(Looper.java:164)
+        at android.app.ActivityThread.main(ActivityThread.java:6938)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:327)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1374)
+     Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.Float
+        at threeinline.alamo.com.threeinline.PlayLocalGameActivity.updateTableAspectRatio(PlayLocalGameActivity.kt:309)
+        at threeinline.alamo.com.threeinline.PlayLocalGameActivity.onCreate(PlayLocalGameActivity.kt:116)
+        at android.app.Activity.performCreate(Activity.java:7183)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1220)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2908)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3030) 
+        at android.app.ActivityThread.-wrap11(Unknown Source:0) 
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1696) 
+        at android.os.Handler.dispatchMessage(Handler.java:105) 
+        at android.os.Looper.loop(Looper.java:164) 
+        at android.app.ActivityThread.main(ActivityThread.java:6938) 
+        at java.lang.reflect.Method.invoke(Native Method) 
+        at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:327) 
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1374) 

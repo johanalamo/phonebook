@@ -9,7 +9,7 @@ import retrofit2.http.Query
 
 interface ProductService {
   @GET (".")
-  fun getProductListData(): Call<ProductListResponse>
+  fun getProductListData(): Call<Array<ProductListResponse>>
 
   @GET ("/{id}/")
   fun getProductDetailsData(@Query ("id") productId: String): Call<ProductDetailsResponse>

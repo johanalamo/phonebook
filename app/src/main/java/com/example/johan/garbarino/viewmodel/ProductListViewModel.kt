@@ -4,8 +4,12 @@ import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.ViewModel
 
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
+import okhttp3.*
+import java.io.IOException
+
+import java.net.ConnectException
+import java.net.UnknownHostException
+
 
 import com.example.johan.garbarino.ConfigApp
 import com.example.johan.garbarino.FakeData
@@ -22,21 +26,36 @@ class ProductListViewModel : ViewModel() {
    private val productList = MutableLiveData<ProductListResponse>()
 
     fun loadProductListData() {
-         val retrofit = Retrofit.Builder()
-            .baseUrl(ConfigApp.getUrlProductList())
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-         val service = retrofit.create(ProductService::class.java)
-         val call = service.getProductListData()
-         call.enqueue(object : retrofit2.Callback<ProductListResponse> {
-            override fun onResponse(call: retrofit2.Call<ProductListResponse>, response: retrofit2.Response<ProductListResponse>) {
-                   productList.value = if (response.code() == 200) response.body()!! else FakeData.getProductList()
+      val client = OkHttpClient()
+      val request = Request.Builder().url(ConfigApp.getUrlProductList()).build()
+
+      client.newCall(request).enqueue( object : Callback {
+          override fun onFailure(call: Call, e: IOException) {
+            var msg: String = ""
+            if (e::class == UnknownHostException::class)
+                msg = "UnknownHostException:"
+            if (e::class == ConnectException::class)
+                msg = "ConnectException"
+            println( "\n\n\n ************************ $msg  \n\n" + e.toString())
+
+          }
+
+          override fun onResponse(call: Call, response: Response) {
+            var r = response.body()?.string()
+            var c: Int = response.code()
+//            println("\n\n\n =====================Respuesta desde el servidor ($c): \n\n" + r)
+
+            var gson = Gson()
+            var data = gson.fromJson(r, ProductListResponse::class.java)
+            try{
+              productList.postValue(data)
+            }catch(e:Exception){
+              println("===============error, exception catched=====================")
+              println(e)
             }
-            override fun onFailure(call: retrofit2.Call<ProductListResponse>, t: Throwable) {
-                println ("Error on connection on ProductListViewModel")
-                productList.value = FakeData.getProductList()
-            }
-         })
+          }
+      }
+      )
     }
     fun getProductList(): LiveData<ProductListResponse> {
         return productList
