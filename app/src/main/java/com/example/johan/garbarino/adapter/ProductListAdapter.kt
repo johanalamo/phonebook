@@ -17,9 +17,9 @@ import com.squareup.picasso.Callback
 
 import com.example.johan.garbarino.FakeData
 
-class ProductListAdapter(private val data: ProductListResponse, private val context:AppCompatActivity) :
+class ProductListAdapter(private val dataMap: ProductListResponse, private val context:AppCompatActivity) :
     RecyclerView.Adapter<ProductListAdapter.MyViewHolder>() {
-
+    private val data = ArrayList(dataMap.values)
     class MyViewHolder(val linearLyt: LinearLayout) : RecyclerView.ViewHolder(linearLyt) {
         private val myImageView: ImageView = itemView.findViewById<ImageView>(R.id.imgProduct)
 
@@ -51,18 +51,10 @@ class ProductListAdapter(private val data: ProductListResponse, private val cont
 //        holder.linearLyt.imgProduct.setImageDrawable(context.getDrawable(R.drawable.img32))
         holder.linearLyt.txtDescription.text  = data[position].name
         holder.linearLyt.txtPrice.text        = data[position].companyName
-/*        if (data[position].discount == 0)
-            holder.linearLyt.lytDiscount.visibility = LinearLayout.GONE
-        else {
-            holder.linearLyt.txtListPrice.text = "$ " + data[position].list_price.toString()
-            holder.linearLyt.txtDiscount.text = data[position].discount.toString() + "% OFF"
-            holder.linearLyt.txtListPrice.setPaintFlags(holder.linearLyt.txtListPrice.getPaintFlags() or Paint.STRIKE_THRU_TEXT_FLAG)
-        }
-        */
         //programacion evento click
         holder.linearLyt.setOnClickListener({
             val intent: Intent = Intent(this.context, ProductDetailsActivity::class.java)
-            intent.putExtra("p_product_id", data[position].id)
+            intent.putExtra("p_id", data[position].id)
             this.context.startActivity(intent)
         })
     }

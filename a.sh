@@ -28,7 +28,7 @@ if [ $1 = "com" ]; then
             $normal;
             echo
             echo "ERROR: ";
-            cat $log_file | head -50;
+            cat $log_file | head -50 | grep -e "e:" -e "w:";
             echo $fecha;
         fi
         first=0;

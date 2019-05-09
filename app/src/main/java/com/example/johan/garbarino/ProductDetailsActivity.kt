@@ -9,15 +9,20 @@ import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.widget.LinearLayout
 import kotlinx.android.synthetic.main.layout_product_details.*
+import kotlinx.android.synthetic.main.layout_product_details.*
 import android.os.SystemClock
-import com.example.johan.garbarino.adapter.ProductImageListAdapter
 import com.example.johan.garbarino.adapter.ProductReviewListAdapter
 import com.example.johan.garbarino.response.Image
 import com.example.johan.garbarino.response.ProductDetailsResponse
 import com.example.johan.garbarino.response.ProductReviewsResponse
 import com.example.johan.garbarino.response.Review
+import com.example.johan.garbarino.response.*
 import com.example.johan.garbarino.viewmodel.ProductDetailsViewModel
 import com.example.johan.garbarino.viewmodel.ProductReviewsViewModel
+
+import android.widget.ImageView
+import com.squareup.picasso.Picasso
+import com.squareup.picasso.Callback
 
 class ProductDetailsActivity : AppCompatActivity() {
     private var productId: String = ""
@@ -33,7 +38,10 @@ class ProductDetailsActivity : AppCompatActivity() {
     private lateinit var productDetailsViewModel: ProductDetailsViewModel
     private lateinit var productReviewsViewModel: ProductReviewsViewModel
 
+    private lateinit var person: Product
 
+
+    private lateinit var myImageView: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         overridePendingTransition(R.anim.slide_up, R.anim.slide_off)
@@ -41,22 +49,93 @@ class ProductDetailsActivity : AppCompatActivity() {
         setContentView(R.layout.layout_details_activity)
 
         try {
-            this.productId = getIntent().getExtras().getString("p_product_id")
+            this.productId = getIntent().getExtras().getString("p_id")
         } catch (e: Exception) {
-            this.productId = "0982a08485"
+            this.productId = "1"
         }
         println("================ProductDetailsActivity.productId = " + this.productId)
-        loadProductDetailsViewModel()
-        loadProductReviewsViewModel()
+
+        DataRepository.viewModelPersonList.getProductList().observe(this,
+                 Observer {
+                    productList -> chargePerson(productList!!)
+                    }
+        )
+
+//        person = DataRepository.viewModelPersonList.getProductList().get(this.productId);
+
+        //println("******************* name: ************  " + person.toString())
+//        loadProductDetailsViewModel()
+//        loadProductReviewsViewModel()
 
     }
-    private fun loadProductDetailsViewModel() {
-        productDetailsViewModel = ViewModelProviders.of(this).get(ProductDetailsViewModel::class.java)
-        productDetailsViewModel.getProductDetails().observe(
-            this,
-            Observer { productDetails -> showDetailsOnUi(productDetails!!)  }
-        )
-        productDetailsViewModel.loadProductDetailsData(this.productId)
+
+    private fun chargePerson(dataMap:ProductListResponse){
+
+              val data = ArrayList(dataMap.values)
+              val person = dataMap.get(this.productId)
+              println(data)
+              showDetailsOnUi(person)
+              var extra: ArrayList<Review> = getExtraData(person!!)
+              createRecyclerViewReviewList(extra)
+
+              var url = person.largeImageURL
+
+
+               myImageView = findViewById<ImageView>(R.id.imgPersonLarge)
+              Picasso.with(this).load(url).into(myImageView)
+
+
+    }
+
+    private fun getExtraData(p:Product): ArrayList<Review>{
+      var r: Review = Review ()
+
+      var extra:ArrayList<Review> = ArrayList()
+
+
+          if (p.phone!!.home!! != null){
+            r = Review()
+            r.fieldName = "PHONE"
+            r.extraInfo = "Home"
+            r.value = p.phone!!.home
+            extra.add(r)
+          }
+
+          if (p.phone!!.mobile!! != null){
+            r = Review()
+            r.fieldName = "PHONE"
+            r.extraInfo = "Mobile"
+            r.value = p.phone!!.mobile
+            extra.add(r)
+          }
+
+          if (p.phone!!.work!! != null){
+            r = Review()
+            r.fieldName = "PHONE"
+            r.extraInfo = "Work"
+            r.value = p.phone!!.work
+            extra.add(r)
+          }
+
+          if (p.address!! != null){
+            r = Review()
+            r.fieldName = "ADDRESS"
+            r.extraInfo = ""
+            r.value = p.address!!.street + "\n" + p.address!!.city + ", " + p.address!!.state + " " + p.address!!.zipCode +  ", " + p.address!!.country +
+            extra.add(r)
+          }
+          if (p.birthdate!! != null){
+            r = Review()
+            r.fieldName = "BIRTHDATE"
+            r.extraInfo = ""
+            r.value = p.birthdate
+            extra.add(r)
+          }
+
+//emailAddress
+
+      return extra
+
     }
 
     private fun loadProductReviewsViewModel() {
@@ -78,29 +157,20 @@ class ProductDetailsActivity : AppCompatActivity() {
         showAnimationStarsThread.start()
     }
 
-    fun showDetailsOnUi(res: ProductDetailsResponse) {
-        txtDescription.text = res.description!!
-        txtPrice.text = "$ " + res.price.toString()
+    fun showDetailsOnUi(res: Product?) {
+        txtDescription.text = res!!.name!!
+        txtPrice.text = res.companyName
 
-        if (res.discount == 0)
+  /*      if (res.discount == 0)
             lytDiscount.visibility = LinearLayout.GONE
-        else {
-            txtListPrice.text = "$ " + res.listPrice.toString()
-            txtDiscount.text = res.discount.toString() + "% OFF"
+        else {*/
+            txtListPrice.text = "$ " + res.name
+//            txtDiscount.text = res.discount.toString() + "% OFF"
             txtListPrice.setPaintFlags(txtListPrice.getPaintFlags() or Paint.STRIKE_THRU_TEXT_FLAG)
-        }
-        createRecyclerViewImageList(res.resources!!.images)
+        //}
+//        createRecyclerViewImageList(res.resources!!.images)
     }
 
-    fun createRecyclerViewImageList(data:Array<Image>){
-        viewManagerImage = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-        viewAdapterImage = ProductImageListAdapter(data, this)
-        recyclerViewImage = findViewById <RecyclerView>(R.id.rviewProductListImages).apply {
-            setHasFixedSize(false)
-            layoutManager = viewManagerImage
-            adapter = viewAdapterImage
-        }
-    }
     fun createRecyclerViewReviewList(data:ArrayList<Review>){
         viewManagerReview = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         viewAdapterReview = ProductReviewListAdapter(data, this)

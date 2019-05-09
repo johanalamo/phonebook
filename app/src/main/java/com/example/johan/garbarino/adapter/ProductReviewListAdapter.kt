@@ -31,20 +31,14 @@ class ProductReviewListAdapter(private val data: ArrayList<Review>, private val 
     // Replace the contents of a view (invoked by the layout manager)
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
 
-        holder.linearLyt.txtNumReview.text  = (position + 1).toString()
+        holder.linearLyt.txtNumReview.text  = data[position].fieldName
         holder.linearLyt.txtReviewStars.text  = data[position].rating.toString()
-        holder.linearLyt.rtbarProductReview.rating = data[position].rating!!
 
-        holder.linearLyt.txtReviewDate.text  = data[position].submissionTime?.subSequence(0,10)
+        holder.linearLyt.txtReviewDate.text  = data[position].extraInfo
         if ((data[position].title == null) or (data[position].title == ""))
-            holder.linearLyt.txtReviewTitle.text  = data[position].title
+            holder.linearLyt.txtReviewTitle.text  = data[position].value
         else
             holder.linearLyt.txtReviewTitle.visibility = TextView.GONE
-        if ((data[position].reviewText == null) or (data[position].reviewText == ""))
-            holder.linearLyt.txtReviewDescription.visibility  = TextView.GONE
-        else
-            holder.linearLyt.txtReviewDescription.text  = data[position].reviewText
-        holder.linearLyt.txtReviewNickname.text  = "Por: " + data[position].userNickname
     }
 
     // Return the size of your dataset (invoked by the layout manager)

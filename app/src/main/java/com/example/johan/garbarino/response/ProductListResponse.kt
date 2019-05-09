@@ -2,7 +2,9 @@ package com.example.johan.garbarino.response
 
 import com.google.gson.annotations.SerializedName
 
-typealias ProductListResponse = Array<Product>
+typealias ProductListResponseFromRemote = Array<Product>
+
+typealias  ProductListResponse = Map<String?, Product>
 //data class ProductListResponse = Array<Product>
 
 class Product {

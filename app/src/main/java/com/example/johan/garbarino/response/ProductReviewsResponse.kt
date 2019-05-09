@@ -26,6 +26,12 @@ class ReviewStatistics {
 
 class Review {
 
+
+    var fieldName:String? = ""
+    var value:String? = ""
+    var extraInfo:String? = ""
+
+
     @SerializedName("id")
     var id:String? = ""
 

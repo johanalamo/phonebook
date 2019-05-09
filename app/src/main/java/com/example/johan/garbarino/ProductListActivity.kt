@@ -12,25 +12,53 @@ import com.example.johan.garbarino.adapter.ProductListAdapter
 import com.example.johan.garbarino.response.ProductListResponse
 import android.os.SystemClock
 
+class Person(name1: String, lastName1: String, age1: Int){
+    var name: String = name1
+    var lastName: String = lastName1
+    var age: Int = age1
+}
+
+
+
 class ProductListActivity : AppCompatActivity() {
+
+  var nameTable: MutableMap<String, Person> = mutableMapOf()
+  var example1 = Person("Josh", "Cohen", 24)
+  var example2 = Person("maria", "carey", 26)
+  var example3 = Person("elvis", "presley", 28)
+
 
    private lateinit var recyclerView:RecyclerView
    private lateinit var viewAdapter: RecyclerView.Adapter<*>
    private lateinit var viewManager: RecyclerView.LayoutManager
 
-   private lateinit var viewModel:ProductListViewModel
+//   private lateinit var viewModel:ProductListViewModel
 
    override fun onCreate(savedInstanceState: Bundle?) {
       super.onCreate(savedInstanceState)
       setContentView(R.layout.layout_main_activity)
-      SystemClock.sleep(1000)
-      viewModel = ViewModelProviders.of(this).get(ProductListViewModel::class.java)
-      viewModel.getProductList().observe(this,
+
+      nameTable["person1"] = example1
+      nameTable["person2"] = example2
+      nameTable["person3"] = example3
+          for(entry in nameTable){
+              println("===========persona: " + entry.value.lastName)
+          }
+      println(nameTable)
+      println("======== contiene person2: " + nameTable.containsKey("person2").toString())
+      var e:Person? = nameTable.get("person3")
+      println("======con get person3: " + e!!.lastName)
+
+
+
+//      SystemClock.sleep(1000)
+      DataRepository.viewModelPersonList = ViewModelProviders.of(this).get(ProductListViewModel::class.java)
+      DataRepository.viewModelPersonList.getProductList().observe(this,
                Observer {
                   productList -> createRecyclerViewProductList(productList!!)
                   }
       )
-      viewModel.loadProductListData()
+      DataRepository.viewModelPersonList.loadProductListData()
    }
 
    fun createRecyclerViewProductList(data:ProductListResponse){

@@ -10,6 +10,11 @@
                   android:layout_height="wrap_content"
 
     >
+        <ImageView
+            android:id="@+id/imgPersonLarge"
+            style="@style/stlImgProductDetails"
+        />
+
         <RatingBar
                 android:id="@+id/rtbarProductDetails"
                 android:numStars="5"
