@@ -8,16 +8,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="stlProductListItem">
+    <style name="stlPhoneBookListItem">
         <item name="android:padding">@dimen/threeSep</item>
         <item name="android:layout_margin">@dimen/oneSep</item>
-        <item name="android:background">@drawable/bg_product_list_item</item>
+        <item name="android:background">@drawable/bg_phonebook_list_item</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:textAlignment">center</item>
     </style>
 
-    <style name="stlImgProductList">
+    <style name="stlImgPersonNormal">
         <item name="android:layout_height">@dimen/sizeImgProductList</item>
         <item name="android:layout_width">@dimen/sizeImgProductList</item>
         <item name="android:textAlignment">center</item>
@@ -29,7 +29,7 @@
         <item name="android:layout_width">@dimen/sizeImgStar</item>
     </style>
 
-    <style name="stlImgProductDetails">
+    <style name="stlImgPersonLarge">
         <item name="android:layout_height">@dimen/sizeImgProductDetails</item>
         <item name="android:layout_width">@dimen/sizeImgProductDetails</item>
         <item name="android:textAlignment">center</item>
@@ -37,66 +37,37 @@
     </style>
 
 
-    <style name="stlProductListDescription">
+    <style name="stlPhoneBookNameNormal">
         <item name="android:textSize">@dimen/textSizeDescriptionInList</item>
         <item name="android:textColor">@android:color/black</item>
     </style>
-    <style name="stlProductListPrice">
+    <style name="stlPhoneBookCompanyNameNormal">
         <item name="android:textSize">@dimen/textSizePriceInList</item>
         <item name="android:textColor">@android:color/holo_red_dark</item>
         <item name="android:textStyle">bold</item>
     </style>
-    <style name="stlProductListPriceList">
-        <item name="android:textSize">@dimen/textSizeListPriceInList</item>
-        <item name="android:textColor">@android:color/darker_gray</item>
-    </style>
-    <style name="stlProductListDiscount">
-        <item name="android:textSize">@dimen/textSizeDiscountInList</item>
-        <item name="android:textColor">@android:color/holo_green_dark</item>
-    </style>
 
 
-    <style name="stlProductDetailsDescription">
+    <style name="stlPhoneBookNameLarge">
         <item name="android:textSize">@dimen/textSizeDescriptionInDetails</item>
         <item name="android:textColor">@android:color/black</item>
     </style>
-    <style name="stlProductDetailsPrice">
+    <style name="stlPhoneBookCompanyNameLarge">
         <item name="android:textSize">@dimen/textSizePriceInDetails</item>
         <item name="android:textColor">@android:color/holo_red_dark</item>
         <item name="android:textStyle">bold</item>
     </style>
-    <style name="stlProductDetailsPriceList">
-        <item name="android:textSize">@dimen/textSizeListPriceInDetails</item>
-        <item name="android:textColor">@android:color/darker_gray</item>
-    </style>
-    <style name="stlProductDetailsDiscount">
-        <item name="android:textSize">@dimen/textSizeDiscountInDetails</item>
-        <item name="android:textColor">@android:color/holo_green_dark</item>
-    </style>
-    <style name="stlProductDetailsStars">
-        <item name="android:textSize">@dimen/textSizeStarsInDetails</item>
-        <item name="android:textColor">@android:color/black</item>
-    </style>
 
 
-    <style name="stlReviewStars">
+    <style name="stlDetailInfoTitle">
         <item name="android:textSize">@dimen/textSizeReview</item>
         <item name="android:textColor">@android:color/darker_gray</item>
     </style>
-    <style name="stlReviewDate">
+    <style name="stlDetailInfoExtra">
         <item name="android:textSize">@dimen/textSizeReview</item>
         <item name="android:textColor">@android:color/darker_gray</item>
     </style>
-    <style name="stlReviewTitle">
-        <item name="android:textSize">@dimen/textSizeReview</item>
-        <item name="android:textColor">@android:color/black</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-    <style name="stlReviewDescription">
-        <item name="android:textSize">@dimen/textSizeReview</item>
-        <item name="android:textColor">@android:color/black</item>
-    </style>
-    <style name="stlReviewNickname">
+    <style name="stlDetailInfoValue">
         <item name="android:textSize">@dimen/textSizeReview</item>
         <item name="android:textColor">@android:color/black</item>
         <item name="android:textStyle">bold</item>

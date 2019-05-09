@@ -4,7 +4,7 @@ green="echo -n -e \e[42m";
 red="echo -n -e \e[41m";
 log_file="log.txt";
 app="com.example.johan.phonebook";
-pkg="com.example.johan.garbarino";
+pkg="com.example.johan.phonebook";
 #activity="PlayLocalGameActivity"
 activity="ProductListActivity"
 
