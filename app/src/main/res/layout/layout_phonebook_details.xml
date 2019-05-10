@@ -6,10 +6,6 @@
                 android:orientation="vertical"
                 style="@style/stlPhoneBookListItem"
 >
-    <android.support.constraint.ConstraintLayout android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-
-    >
         <ImageView
             android:id="@+id/imgPersonLarge"
             style="@style/stlImgPersonLarge"
@@ -18,7 +14,6 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"
         />
-    </android.support.constraint.ConstraintLayout>
 
     <TextView
             android:text="TextView"
@@ -26,6 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/txtName"
+            android:layout_gravity="center"
     />
     <TextView
             android:text="TextView"
@@ -33,5 +29,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/txtCompanyName"
+            android:layout_gravity="center_horizontal"
     />
 </LinearLayout>

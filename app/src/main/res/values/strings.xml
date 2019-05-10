@@ -1,5 +1,15 @@
 <resources>
     <string name="app_name">Phone book</string>
 
-    <string name="strComments">Comentarios</string>
+
+    <string name="strPhone">Phone</string>
+    <string name="strMobile">Mobile</string>
+    <string name="strWork">Work</string>
+    <string name="strFavoriteContacts">Favorite contacts</string>
+    <string name="strOtherContacts">Other contacts</string>
+    <string name="strContacts">Contacts</string>
+    <string name="strAddress">Address</string>
+    <string name="strBirthdate">Birthdate</string>
+    <string name="strEmail">Email</string>
+
 </resources>

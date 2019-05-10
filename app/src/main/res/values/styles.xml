@@ -3,13 +3,16 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@android:color/holo_red_light</item>
+        <item name="colorPrimary">@color/colorGray</item>
+<!--        <item name="colorPrimary">@android:color/holo_red_light</item>     -->
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+
     <style name="stlPhoneBookListItem">
-        <item name="android:padding">@dimen/threeSep</item>
+        <item name="android:padding">@dimen/fourSep</item>
         <item name="android:layout_margin">@dimen/oneSep</item>
         <item name="android:background">@drawable/bg_phonebook_list_item</item>
         <item name="android:layout_height">wrap_content</item>
@@ -17,58 +20,64 @@
         <item name="android:textAlignment">center</item>
     </style>
 
+
+
+
     <style name="stlImgPersonNormal">
-        <item name="android:layout_height">@dimen/sizeImgProductList</item>
-        <item name="android:layout_width">@dimen/sizeImgProductList</item>
+        <item name="android:layout_height">@dimen/sizeImgPersonNormal</item>
+        <item name="android:layout_width">@dimen/sizeImgPersonNormal</item>
         <item name="android:textAlignment">center</item>
         <item name="android:layout_gravity">center_horizontal</item>
     </style>
 
-    <style name="stlImgStar">
+    <style name="stlImgStarPersonList">
         <item name="android:layout_height">@dimen/sizeImgStar</item>
         <item name="android:layout_width">@dimen/sizeImgStar</item>
+        <item name="android:layout_marginLeft">@dimen/twoSep</item>
+        <item name="android:layout_marginRight">@dimen/twoSep</item>
     </style>
 
     <style name="stlImgPersonLarge">
-        <item name="android:layout_height">@dimen/sizeImgProductDetails</item>
-        <item name="android:layout_width">@dimen/sizeImgProductDetails</item>
+        <item name="android:layout_height">@dimen/sizeImgPersonLarge</item>
+        <item name="android:layout_width">@dimen/sizeImgPersonLarge</item>
         <item name="android:textAlignment">center</item>
         <item name="android:layout_gravity">center_horizontal</item>
     </style>
 
 
     <style name="stlPhoneBookNameNormal">
-        <item name="android:textSize">@dimen/textSizeDescriptionInList</item>
+        <item name="android:textSize">@dimen/sizeTxtNamePersonList</item>
         <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
     </style>
     <style name="stlPhoneBookCompanyNameNormal">
-        <item name="android:textSize">@dimen/textSizePriceInList</item>
-        <item name="android:textColor">@android:color/holo_red_dark</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/sizeTxtNameCompanyNameList</item>
+<!--        <item name="android:textColor">@android:color/holo_red_dark</item>    -->
+        <item name="android:textColor">@color/colorGray</item>
     </style>
 
 
     <style name="stlPhoneBookNameLarge">
-        <item name="android:textSize">@dimen/textSizeDescriptionInDetails</item>
+        <item name="android:textSize">@dimen/sizeTxtNamePersonDetail</item>
         <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
     </style>
     <style name="stlPhoneBookCompanyNameLarge">
-        <item name="android:textSize">@dimen/textSizePriceInDetails</item>
-        <item name="android:textColor">@android:color/holo_red_dark</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/sizeTxtNameCompanyNameDetail</item>
+        <item name="android:textColor">@color/colorGray</item>
     </style>
 
 
     <style name="stlDetailInfoTitle">
-        <item name="android:textSize">@dimen/textSizeReview</item>
+        <item name="android:textSize">@dimen/sizeTextDetailInfo</item>
         <item name="android:textColor">@android:color/darker_gray</item>
     </style>
     <style name="stlDetailInfoExtra">
-        <item name="android:textSize">@dimen/textSizeReview</item>
+        <item name="android:textSize">@dimen/sizeTextDetailInfo</item>
         <item name="android:textColor">@android:color/darker_gray</item>
     </style>
     <style name="stlDetailInfoValue">
-        <item name="android:textSize">@dimen/textSizeReview</item>
+        <item name="android:textSize">@dimen/sizeTextDetailInfo</item>
         <item name="android:textColor">@android:color/black</item>
         <item name="android:textStyle">bold</item>
     </style>
