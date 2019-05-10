@@ -5,8 +5,9 @@
 
     <dimen name="sizeImgPersonLarge">200dp</dimen>
 
-    <dimen name="sizeImgStar">25dp</dimen>
+    <dimen name="sizeIconSmall">30dp</dimen>
 
+    <dimen name="sizeToolbarHeight">90dp</dimen>
 
     <dimen name="zeroSep">0dp</dimen>
     <dimen name="oneSep">4dp</dimen>
@@ -19,6 +20,10 @@
     <dimen name="radioCornerItem">5dp</dimen>
 
     <dimen name="sizeWidthLineThin">1dp</dimen>
+
+    <dimen name="sizeTxtTitleActivity">26sp</dimen>
+
+    <dimen name="sizeTxtSubtitle">22sp</dimen>
 
     <dimen name="sizeTxtNamePersonList">26sp</dimen>
     <dimen name="sizeTxtNameCompanyNameList">18sp</dimen>

@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import kotlinx.android.synthetic.main.layout_phonebook_details_activity.*
 import kotlinx.android.synthetic.main.layout_phonebook_details.*
 import com.example.johan.phonebook.adapter.DetailInfoAdapter
 import com.example.johan.phonebook.response.DetailInfo
@@ -41,11 +42,8 @@ class PhoneBookDetailsActivity : AppCompatActivity() {
                     }
         )
 
-//        person = DataRepository.viewModelPhoneBookList.getPhoneBookList().get(this.personId);
-
-        //println("******************* name: ************  " + person.toString())
-//        loadProductDetailsViewModel()
-//        loadProductReviewsViewModel()
+        //hide Action bar
+        supportActionBar!!.hide()
 
     }
 
@@ -72,45 +70,45 @@ class PhoneBookDetailsActivity : AppCompatActivity() {
       var extra:ArrayList<DetailInfo> = ArrayList()
       if (p.phone?.home != ""){
         r = DetailInfo()
-        r.fieldName = "PHONE"
-        r.extraInfo = "Home"
+        r.fieldName = getString(R.string.strPhone).toUpperCase() + ":"
+        r.extraInfo = getString(R.string.strHome)
         r.value = p.phone!!.home
         extra.add(r)
       }
 
       if (p.phone?.mobile  != ""){
         r = DetailInfo()
-        r.fieldName = "PHONE"
-        r.extraInfo = "Mobile"
+        r.fieldName = getString(R.string.strPhone).toUpperCase() + ":"
+        r.extraInfo = getString(R.string.strMobile)
         r.value = p.phone!!.mobile
         extra.add(r)
       }
 
       if (p.phone?.work != ""){
         r = DetailInfo()
-        r.fieldName = "PHONE"
-        r.extraInfo = "Work"
+        r.fieldName = getString(R.string.strPhone).toUpperCase() + ":"
+        r.extraInfo = getString(R.string.strWork)
         r.value = p.phone!!.work
         extra.add(r)
       }
 
       if (p.address!! != null){
         r = DetailInfo()
-        r.fieldName = "ADDRESS"
+        r.fieldName = getString(R.string.strAddress).toUpperCase() + ":"
         r.extraInfo = ""
         r.value = p.address!!.street + "\n" + p.address!!.city + ", " + p.address!!.state + " " + p.address!!.zipCode +  ", " + p.address!!.country +
         extra.add(r)
       }
       if (p.birthdate!! != null){
         r = DetailInfo()
-        r.fieldName = "BIRTHDATE"
+        r.fieldName = getString(R.string.strBirthdate).toUpperCase() + ":"
         r.extraInfo = ""
         r.value = p.birthdate
         extra.add(r)
       }
       if (p.emailAddress!! != null){
         r = DetailInfo()
-        r.fieldName = "EMAIL"
+        r.fieldName = getString(R.string.strEmail).toUpperCase() + ":"
         r.extraInfo = ""
         r.value = p.emailAddress!!
         extra.add(r)
@@ -121,6 +119,12 @@ class PhoneBookDetailsActivity : AppCompatActivity() {
     fun showDetailsOnUi(res: Product?) {
         txtName.text = res!!.name!!
         txtCompanyName.text = res.companyName
+
+        if (res.isFavorite!!)
+          imgIsFavorite.setImageDrawable(getDrawable(android.R.drawable.star_big_on))
+        else
+            imgIsFavorite.setImageDrawable(getDrawable(android.R.drawable.star_big_off))
+
     }
 
     fun createRecyclerViewReviewList(data:ArrayList<DetailInfo>){

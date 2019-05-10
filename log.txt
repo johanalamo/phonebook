@@ -1,5 +1,5 @@
 
-==jue may  9 17:30:50 -03 2019=======
+==vie may 10 18:29:22 -03 2019=======
 > Task :app:preBuild UP-TO-DATE
 > Task :app:preDebugBuild UP-TO-DATE
 > Task :app:compileDebugAidl NO-SOURCE
@@ -13,10 +13,13 @@
 > Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
 > Task :app:processDebugManifest UP-TO-DATE
 > Task :app:processDebugResources UP-TO-DATE
-> Task :app:compileDebugKotlin UP-TO-DATE
+
+> Task :app:compileDebugKotlin
+w: /home/jalamo/projectsjohan/phonebook/app/src/main/java/com/example/johan/phonebook/PhoneBookListActivity.kt: (28, 82): Unnecessary non-null assertion (!!) on a non-null receiver of type PhoneBookListResponse /* = Map<String?, Product> */
+
 > Task :app:prepareLintJar UP-TO-DATE
 > Task :app:generateDebugSources UP-TO-DATE
-> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:javaPreCompileDebug
 > Task :app:compileDebugJavaWithJavac UP-TO-DATE
 > Task :app:compileDebugNdk NO-SOURCE
 > Task :app:compileDebugSources UP-TO-DATE
@@ -25,16 +28,16 @@
 > Task :app:generateDebugAssets UP-TO-DATE
 > Task :app:mergeDebugAssets UP-TO-DATE
 > Task :app:mergeExtDexDebug UP-TO-DATE
-> Task :app:transformClassesWithDexBuilderForDebug UP-TO-DATE
-> Task :app:mergeDexDebug UP-TO-DATE
+> Task :app:transformClassesWithDexBuilderForDebug
+> Task :app:mergeDexDebug
 > Task :app:validateSigningDebug UP-TO-DATE
 > Task :app:signingConfigWriterDebug UP-TO-DATE
 > Task :app:mergeDebugJniLibFolders UP-TO-DATE
 > Task :app:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
 > Task :app:processDebugJavaRes NO-SOURCE
 > Task :app:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
-> Task :app:packageDebug UP-TO-DATE
-> Task :app:assembleDebug UP-TO-DATE
+> Task :app:packageDebug
+> Task :app:assembleDebug
 
-BUILD SUCCESSFUL in 0s
-26 actionable tasks: 26 up-to-date
+BUILD SUCCESSFUL in 3s
+26 actionable tasks: 5 executed, 21 up-to-date

@@ -15,7 +15,6 @@
                 android:id="@+id/imgProduct"
                 style="@style/stlImgPersonNormal"
         />
-
         <ImageView
                 android:id="@+id/imgStart"
                 style="@style/stlImgStarPersonList"

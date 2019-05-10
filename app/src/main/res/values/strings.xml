@@ -5,6 +5,7 @@
     <string name="strPhone">Phone</string>
     <string name="strMobile">Mobile</string>
     <string name="strWork">Work</string>
+    <string name="strHome">Home</string>
     <string name="strFavoriteContacts">Favorite contacts</string>
     <string name="strOtherContacts">Other contacts</string>
     <string name="strContacts">Contacts</string>

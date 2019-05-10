@@ -46,6 +46,11 @@ class PhoneBookListAdapter(private val dataMap: PhoneBookListResponse, private v
         holder.linearLyt.txtName.text  = data[position].name
         holder.linearLyt.txtCompanyName.text        = data[position].companyName
         //programacion evento click
+        if (data[position].isFavorite!!)
+            holder.linearLyt.imgStart.visibility = LinearLayout.VISIBLE
+        else
+            holder.linearLyt.imgStart.visibility = LinearLayout.INVISIBLE
+            
         holder.linearLyt.setOnClickListener({
             val intent: Intent = Intent(this.context, PhoneBookDetailsActivity::class.java)
             intent.putExtra("p_id", data[position].id)

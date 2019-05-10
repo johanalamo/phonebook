@@ -12,7 +12,8 @@
 
 
     <style name="stlPhoneBookListItem">
-        <item name="android:padding">@dimen/fourSep</item>
+<!--        <item name="android:padding">@dimen/fourSep</item>  -->
+        <item name="android:padding">@dimen/zeroSep</item>
         <item name="android:layout_margin">@dimen/oneSep</item>
         <item name="android:background">@drawable/bg_phonebook_list_item</item>
         <item name="android:layout_height">wrap_content</item>
@@ -20,7 +21,35 @@
         <item name="android:textAlignment">center</item>
     </style>
 
+    <style name="stlToolbarActivity">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/colorGray</item>
+        <item name="android:padding">@dimen/threeSep</item>
+    </style>
 
+    <style name="stlTitleActivity">
+        <item name="android:layout_marginLeft">@dimen/twoSep</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/sizeTxtTitleActivity</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="stlSubtitle">
+        <item name="android:layout_marginLeft">@dimen/twoSep</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/sizeTxtSubtitle</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@color/colorGrayLight</item>
+    </style>
 
 
     <style name="stlImgPersonNormal">
@@ -31,11 +60,19 @@
     </style>
 
     <style name="stlImgStarPersonList">
-        <item name="android:layout_height">@dimen/sizeImgStar</item>
-        <item name="android:layout_width">@dimen/sizeImgStar</item>
+        <item name="android:layout_height">@dimen/sizeIconSmall</item>
+        <item name="android:layout_width">@dimen/sizeIconSmall</item>
         <item name="android:layout_marginLeft">@dimen/twoSep</item>
         <item name="android:layout_marginRight">@dimen/twoSep</item>
     </style>
+
+    <style name="stlImgIconSmall">
+        <item name="android:layout_height">@dimen/sizeIconSmall</item>
+        <item name="android:layout_width">@dimen/sizeIconSmall</item>
+        <item name="android:layout_marginLeft">@dimen/twoSep</item>
+        <item name="android:layout_marginRight">@dimen/twoSep</item>
+    </style>
+
 
     <style name="stlImgPersonLarge">
         <item name="android:layout_height">@dimen/sizeImgPersonLarge</item>

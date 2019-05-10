@@ -24,17 +24,22 @@ class ProductListActivity : AppCompatActivity() {
       DataRepository.viewModelPhoneBookList = ViewModelProviders.of(this).get(PhoneBookListViewModel::class.java)
       DataRepository.viewModelPhoneBookList.getPhoneBookList().observe(this,
                Observer {
-                  phoneBookList -> createRecyclerViewPhoneBookList(phoneBookList!!)
+                  phoneBookList -> createRecyclerViewPhoneBookList(phoneBookList!!, R.id.rviewPhoneBookListFavorite, true)
+                                    createRecyclerViewPhoneBookList(phoneBookList!!, R.id.rviewPhoneBookListOther, false)
                   }
       )
       DataRepository.viewModelPhoneBookList.loadPhoneBookListData()
+      //hide Action bar
+      supportActionBar!!.hide()
    }
 
-   fun createRecyclerViewPhoneBookList(data:PhoneBookListResponse){
+   fun createRecyclerViewPhoneBookList(data:PhoneBookListResponse, idRecyclerView:Int, isFav:Boolean){
       viewManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-      viewAdapter = PhoneBookListAdapter(data, this)
-      recyclerView = findViewById <RecyclerView>(R.id.rviewPhoneBookList).apply {
-         setHasFixedSize(false);
+      val filteredData = data.filter { it.value.isFavorite!! == isFav  }
+//      val filteredDataDos = data.toSortedMap() .filter { it.value.isFavorite!! == isFav  }
+      viewAdapter = PhoneBookListAdapter(filteredData, this)
+      recyclerView = findViewById <RecyclerView>(idRecyclerView).apply {
+         setHasFixedSize(false)
          layoutManager = viewManager
          adapter = viewAdapter
       }
