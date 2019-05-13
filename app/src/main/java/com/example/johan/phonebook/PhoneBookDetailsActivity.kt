@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.view.View
 import kotlinx.android.synthetic.main.layout_phonebook_details_activity.*
 import kotlinx.android.synthetic.main.layout_phonebook_details.*
 import com.example.johan.phonebook.adapter.DetailInfoAdapter
@@ -12,6 +13,7 @@ import com.example.johan.phonebook.response.DetailInfo
 import com.example.johan.phonebook.response.*
 
 import android.widget.ImageView
+import android.widget.Toast
 import com.squareup.picasso.Picasso
 
 class PhoneBookDetailsActivity : AppCompatActivity() {
@@ -135,5 +137,14 @@ class PhoneBookDetailsActivity : AppCompatActivity() {
             layoutManager = viewManagerDetails
             adapter = viewAdapterDetails
         }
+    }
+    fun pressButton(view: View){
+        when (view.id)  {
+            R.id.btnBack -> finish()
+            R.id.imgIsFavorite -> {
+                Toast.makeText(this,  getString(R.string.strInConstruction).toUpperCase(), Toast.LENGTH_LONG ).show()
+            }
+        }
+
     }
 }

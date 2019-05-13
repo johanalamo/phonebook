@@ -34,8 +34,8 @@ class ProductListActivity : AppCompatActivity() {
 
    fun createRecyclerViewPhoneBookList(data:PhoneBookListResponse, idRecyclerView:Int, isFav:Boolean){
       viewManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-      //val filteredData = data.filter { it.value.isFavorite!! == isFav  }
-      viewAdapter = PhoneBookListAdapter(data, this)
+      val sortedData = data.filter { it.value.isFavorite!! == isFav  } + data.filter { it.value.isFavorite!! == !isFav  }
+      viewAdapter = PhoneBookListAdapter(sortedData, this)
       recyclerView = findViewById <RecyclerView>(idRecyclerView).apply {
          setHasFixedSize(false)
          layoutManager = viewManager

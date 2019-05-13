@@ -11,5 +11,6 @@
     <string name="strAddress">Address</string>
     <string name="strBirthdate">Birthdate</string>
     <string name="strEmail">Email</string>
+    <string name="strInConstruction">In construction</string>
 
 </resources>
