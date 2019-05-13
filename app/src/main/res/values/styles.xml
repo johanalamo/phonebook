@@ -12,8 +12,7 @@
 
 
     <style name="stlPhoneBookListItem">
-<!--        <item name="android:padding">@dimen/fourSep</item>  -->
-        <item name="android:padding">@dimen/zeroSep</item>
+        <item name="android:padding">@dimen/fourSep</item>
         <item name="android:layout_margin">@dimen/oneSep</item>
         <item name="android:background">@drawable/bg_phonebook_list_item</item>
         <item name="android:layout_height">wrap_content</item>

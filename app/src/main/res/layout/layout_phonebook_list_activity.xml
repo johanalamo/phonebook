@@ -23,17 +23,8 @@
                 style="@style/stlTitleActivity"
         />
     </LinearLayout>
- <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
-     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
-    <TextView
-            android:id="@+id/txtFavoriteContacts"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/strFavoriteContacts"
-            style="@style/stlSubtitle"
-    />
     <android.support.v7.widget.RecyclerView
-            android:id="@+id/rviewPhoneBookListFavorite"
+            android:id="@+id/rviewPhoneBookList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -41,22 +32,4 @@
             app:layout_constraintTop_toBottomOf="@+id/lytTitle"
             app:layout_constraintBottom_toBottomOf="parent"
     />
-    <TextView
-            android:id="@+id/txtOtherContacts"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/strOtherContacts"
-            style="@style/stlSubtitle"
-    />
-    <android.support.v7.widget.RecyclerView
-            android:id="@+id/rviewPhoneBookListOther"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lytTitle"
-            app:layout_constraintBottom_toBottomOf="parent"
-    />
-     </LinearLayout>
- </ScrollView>
 </LinearLayout>

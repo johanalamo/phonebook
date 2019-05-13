@@ -24,8 +24,7 @@ class ProductListActivity : AppCompatActivity() {
       DataRepository.viewModelPhoneBookList = ViewModelProviders.of(this).get(PhoneBookListViewModel::class.java)
       DataRepository.viewModelPhoneBookList.getPhoneBookList().observe(this,
                Observer {
-                  phoneBookList -> createRecyclerViewPhoneBookList(phoneBookList!!, R.id.rviewPhoneBookListFavorite, true)
-                                    createRecyclerViewPhoneBookList(phoneBookList!!, R.id.rviewPhoneBookListOther, false)
+                  phoneBookList -> createRecyclerViewPhoneBookList(phoneBookList!!, R.id.rviewPhoneBookList, true)
                   }
       )
       DataRepository.viewModelPhoneBookList.loadPhoneBookListData()
@@ -35,9 +34,8 @@ class ProductListActivity : AppCompatActivity() {
 
    fun createRecyclerViewPhoneBookList(data:PhoneBookListResponse, idRecyclerView:Int, isFav:Boolean){
       viewManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-      val filteredData = data.filter { it.value.isFavorite!! == isFav  }
-//      val filteredDataDos = data.toSortedMap() .filter { it.value.isFavorite!! == isFav  }
-      viewAdapter = PhoneBookListAdapter(filteredData, this)
+      //val filteredData = data.filter { it.value.isFavorite!! == isFav  }
+      viewAdapter = PhoneBookListAdapter(data, this)
       recyclerView = findViewById <RecyclerView>(idRecyclerView).apply {
          setHasFixedSize(false)
          layoutManager = viewManager
