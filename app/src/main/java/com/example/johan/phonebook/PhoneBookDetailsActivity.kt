@@ -8,7 +8,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.View
 import kotlinx.android.synthetic.main.layout_phonebook_details_activity.*
 import kotlinx.android.synthetic.main.layout_phonebook_details.*
-import com.example.johan.phonebook.adapter.DetailInfoAdapter
+import com.example.johan.phonebook.adapter.DetailInfoRecyclerViewAdapter
 import com.example.johan.phonebook.response.DetailInfo
 import com.example.johan.phonebook.response.*
 
@@ -21,8 +21,6 @@ class PhoneBookDetailsActivity : AppCompatActivity() {
 
 
     private lateinit var recyclerViewDetails:RecyclerView
-    private lateinit var viewAdapterDetails: RecyclerView.Adapter<*>
-    private lateinit var viewManagerDetails: RecyclerView.LayoutManager
 
     private lateinit var imgPerson: ImageView
 
@@ -130,13 +128,12 @@ class PhoneBookDetailsActivity : AppCompatActivity() {
     }
 
     fun createRecyclerViewReviewList(data:ArrayList<DetailInfo>){
-        viewManagerDetails = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        viewAdapterDetails = DetailInfoAdapter(data, this)
-        recyclerViewDetails = findViewById <RecyclerView>(R.id.rviewDetailInfo).apply {
-            setHasFixedSize(false);
-            layoutManager = viewManagerDetails
-            adapter = viewAdapterDetails
-        }
+
+        recyclerViewDetails = findViewById <RecyclerView>(R.id.rviewDetailInfo)
+
+        recyclerViewDetails.setHasFixedSize(false)
+        recyclerViewDetails.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        recyclerViewDetails.adapter = DetailInfoRecyclerViewAdapter(data, this)
     }
     fun pressButton(view: View){
         when (view.id)  {

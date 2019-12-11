@@ -14,8 +14,6 @@ import com.example.johan.phonebook.response.PhoneBookListResponse
 class PhoneBookListActivity : AppCompatActivity() {
 
    private lateinit var recyclerView:RecyclerView
-   private lateinit var viewAdapter: RecyclerView.Adapter<*>
-   private lateinit var viewManager: RecyclerView.LayoutManager
 
    override fun onCreate(savedInstanceState: Bundle?) {
       super.onCreate(savedInstanceState)
@@ -33,13 +31,11 @@ class PhoneBookListActivity : AppCompatActivity() {
    }
 
    fun createRecyclerViewPhoneBookList(data:PhoneBookListResponse, idRecyclerView:Int, isFav:Boolean){
-      viewManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
       val sortedData = data.filter { it.value.isFavorite!! == isFav  } + data.filter { it.value.isFavorite!! == !isFav  }
-      viewAdapter = PhoneBookListAdapter(sortedData, this)
-      recyclerView = findViewById <RecyclerView>(idRecyclerView).apply {
-         setHasFixedSize(false)
-         layoutManager = viewManager
-         adapter = viewAdapter
-      }
+
+      recyclerView = findViewById <RecyclerView>(idRecyclerView)
+      recyclerView.setHasFixedSize(false)
+      recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+      recyclerView.adapter = PhoneBookListAdapter(sortedData, this)
    }
 }
