@@ -37,7 +37,7 @@ class PhoneBookListViewModel : ViewModel() {
             var r = response.body()?.string()
 
             var gson = Gson()
-            var data = gson.fromJson(r, ProductListResponseFromRemote::class.java)
+            var data = gson.fromJson(r, PhonebookListResponseFromRemote::class.java)
             val map = data.associateBy({it.id}, {it})
             try{
               phoneBookList.postValue(map)

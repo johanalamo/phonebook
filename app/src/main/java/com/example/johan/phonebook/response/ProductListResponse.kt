@@ -2,12 +2,12 @@ package com.example.johan.phonebook.response
 
 import com.google.gson.annotations.SerializedName
 
-typealias ProductListResponseFromRemote = Array<Product>
+typealias PhonebookListResponseFromRemote = Array<Phonebook>
 
-typealias  PhoneBookListResponse = Map<String?, Product>
-//data class PhoneBookListResponse = Array<Product>
+typealias  PhoneBookListResponse = Map<String?, Phonebook>
+//data class PhoneBookListResponse = Array<Phonebook>
 
-class Product {
+class Phonebook {
   @SerializedName("id")
   var id: String? = ""
 

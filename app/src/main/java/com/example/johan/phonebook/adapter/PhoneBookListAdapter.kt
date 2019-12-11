@@ -18,7 +18,7 @@ class PhoneBookListAdapter(private val dataMap: PhoneBookListResponse, private v
     RecyclerView.Adapter<PhoneBookListAdapter.ViewHolder>() {
     private val data = ArrayList(dataMap.values)
     class ViewHolder(val linearLyt: LinearLayout) : RecyclerView.ViewHolder(linearLyt) {
-        private val myImageView: ImageView = itemView.findViewById<ImageView>(R.id.imgProduct)
+        private val myImageView: ImageView = itemView.findViewById<ImageView>(R.id.imgPhoto)
 
         fun updateImageWithUrl(url: String?, c:AppCompatActivity) {
          Picasso.with(itemView.context).load(url).into(myImageView,
@@ -42,7 +42,7 @@ class PhoneBookListAdapter(private val dataMap: PhoneBookListResponse, private v
     // Replace the contents of a view (invoked by the layout manager)
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.updateImageWithUrl(data[position].smallImageURL, context)
-//        holder.linearLyt.imgProduct.setImageDrawable(context.getDrawable(R.drawable.img32))
+//        holder.linearLyt.imgPhoto.setImageDrawable(context.getDrawable(R.drawable.img32))
         holder.linearLyt.txtName.text  = data[position].name
         holder.linearLyt.txtCompanyName.text        = data[position].companyName
         //programacion evento click
@@ -50,7 +50,7 @@ class PhoneBookListAdapter(private val dataMap: PhoneBookListResponse, private v
             holder.linearLyt.imgStart.visibility = LinearLayout.VISIBLE
         else
             holder.linearLyt.imgStart.visibility = LinearLayout.INVISIBLE
-            
+
         holder.linearLyt.setOnClickListener({
             val intent: Intent = Intent(this.context, PhoneBookDetailsActivity::class.java)
             intent.putExtra("p_id", data[position].id)

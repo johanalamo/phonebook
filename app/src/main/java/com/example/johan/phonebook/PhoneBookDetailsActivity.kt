@@ -40,7 +40,7 @@ class PhoneBookDetailsActivity : AppCompatActivity() {
 
         DataRepository.viewModelPhoneBookList.getPhoneBookList().observe(this,
                  Observer {
-                    productList -> chargePerson(productList!!)
+                    phonebookList -> chargePerson(phonebookList!!)
                     }
         )
 
@@ -67,7 +67,7 @@ class PhoneBookDetailsActivity : AppCompatActivity() {
 
     }
 
-    private fun getExtraData(p:Product): ArrayList<DetailInfo>{
+    private fun getExtraData(p:Phonebook): ArrayList<DetailInfo>{
       var r: DetailInfo = DetailInfo ()
       var extra:ArrayList<DetailInfo> = ArrayList()
       if (p.phone?.home != ""){
@@ -118,7 +118,7 @@ class PhoneBookDetailsActivity : AppCompatActivity() {
       return extra
     }
 
-    fun showDetailsOnUi(res: Product?) {
+    fun showDetailsOnUi(res: Phonebook?) {
         txtName.text = res!!.name!!
         txtCompanyName.text = res.companyName
 

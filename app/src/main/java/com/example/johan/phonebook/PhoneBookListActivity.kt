@@ -11,7 +11,7 @@ import com.example.johan.phonebook.adapter.PhoneBookListAdapter
 import com.example.johan.phonebook.response.PhoneBookListResponse
 
 
-class ProductListActivity : AppCompatActivity() {
+class PhoneBookListActivity : AppCompatActivity() {
 
    private lateinit var recyclerView:RecyclerView
    private lateinit var viewAdapter: RecyclerView.Adapter<*>
