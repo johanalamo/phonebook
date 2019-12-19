@@ -31,7 +31,7 @@ class PhoneBookDetailsActivity : AppCompatActivity() {
         setContentView(R.layout.layout_phonebook_details_activity)
 
         try {
-            this.personId = intent.extras.getString("p_id")
+            this.personId = intent?.extras?.getString("p_id") ?: ""
         } catch (e: Exception) {
             this.personId = "1"
         }
@@ -66,7 +66,7 @@ class PhoneBookDetailsActivity : AppCompatActivity() {
     }
 
     private fun getExtraData(p: Phonebook): ArrayList<DetailInfo> {
-        var r: DetailInfo = DetailInfo()
+        var r: DetailInfo
         var extra: ArrayList<DetailInfo> = ArrayList()
         if (p.phone?.home != "") {
             r = DetailInfo()
@@ -92,7 +92,7 @@ class PhoneBookDetailsActivity : AppCompatActivity() {
             extra.add(r)
         }
 
-        if (p.address!! != null) {
+        if (p.address != null) {
             r = DetailInfo()
             r.fieldName = getString(R.string.strAddress).toUpperCase() + ":"
             r.extraInfo = ""
@@ -100,14 +100,14 @@ class PhoneBookDetailsActivity : AppCompatActivity() {
                 p.address!!.street + "\n" + p.address!!.city + ", " + p.address!!.state + " " + p.address!!.zipCode + ", " + p.address!!.country +
                         extra.add(r)
         }
-        if (p.birthdate!! != null) {
+        if (p.birthdate != null) {
             r = DetailInfo()
             r.fieldName = getString(R.string.strBirthdate).toUpperCase() + ":"
             r.extraInfo = ""
             r.value = p.birthdate
             extra.add(r)
         }
-        if (p.emailAddress!! != null) {
+        if (p.emailAddress != null) {
             r = DetailInfo()
             r.fieldName = getString(R.string.strEmail).toUpperCase() + ":"
             r.extraInfo = ""
