@@ -9,13 +9,12 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import com.example.johan.phonebook.adapter.PhoneBookListAdapter
-import com.example.johan.phonebook.listener.PhoneBookListRecyclerViewClickListener
 import com.example.johan.phonebook.response.PhoneBookListResponse
 import com.example.johan.phonebook.response.Phonebook
 import com.example.johan.phonebook.viewmodel.PhoneBookListViewModel
 
 
-class PhoneBookListActivity : AppCompatActivity(), PhoneBookListRecyclerViewClickListener {
+class PhoneBookListActivity : AppCompatActivity(), PhoneBookListAdapter.ClickListener {
 
     private lateinit var recyclerView: RecyclerView
 
