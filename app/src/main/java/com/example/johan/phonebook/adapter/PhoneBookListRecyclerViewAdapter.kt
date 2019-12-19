@@ -5,10 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import kotlinx.android.synthetic.main.layout_phonebook_list_recycler_view.view.*
-import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import com.example.johan.phonebook.response.PhoneBookListResponse
-import com.example.johan.phonebook.PhoneBookDetailsActivity
 import com.example.johan.phonebook.R
 import com.example.johan.phonebook.listener.PhoneBookListRecyclerViewClickListener
 import com.example.johan.phonebook.viewholder.PhoneBookListRecyclerViewViewHolder
