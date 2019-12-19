@@ -7,6 +7,7 @@ import android.widget.LinearLayout
 import android.support.v7.app.AppCompatActivity
 import com.example.johan.phonebook.R
 import com.example.johan.phonebook.response.DetailInfo
+import com.example.johan.phonebook.viewholder.DetailInfoRecyclerViewViewHolder
 import kotlinx.android.synthetic.main.layout_detailinfo_list_recycler_view.view.*
 
 
