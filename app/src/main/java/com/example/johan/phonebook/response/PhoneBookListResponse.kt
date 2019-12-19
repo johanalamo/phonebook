@@ -7,36 +7,35 @@ typealias PhonebookListResponseFromRemote = Array<Phonebook>
 typealias  PhoneBookListResponse = Map<String?, Phonebook>
 
 class Phonebook {
-  @SerializedName("id")
-  var id: String? = ""
+    @SerializedName("id")
+    var id: String? = ""
 
-  @SerializedName("name")
-  val name: String? = ""
+    @SerializedName("name")
+    val name: String? = ""
 
-  @SerializedName("companyName")
-  val companyName: String? = ""
+    @SerializedName("companyName")
+    val companyName: String? = ""
 
-  @SerializedName("isFavorite")
-  val isFavorite: Boolean? = false
+    @SerializedName("isFavorite")
+    val isFavorite: Boolean? = false
 
-  @SerializedName("smallImageURL")
-  val smallImageURL: String? = ""
+    @SerializedName("smallImageURL")
+    val smallImageURL: String? = ""
 
-  @SerializedName("largeImageURL")
-  val largeImageURL: String? = ""
+    @SerializedName("largeImageURL")
+    val largeImageURL: String? = ""
 
-  @SerializedName("emailAddress")
-  val emailAddress: String? = ""
+    @SerializedName("emailAddress")
+    val emailAddress: String? = ""
 
-  @SerializedName("birthdate")
-  val birthdate: String? = ""
+    @SerializedName("birthdate")
+    val birthdate: String? = ""
 
-  @SerializedName("phone")
-  var phone: Phone? = Phone()
+    @SerializedName("phone")
+    var phone: Phone? = Phone()
 
-  @SerializedName("address")
-  var address: Address? = Address()
-
+    @SerializedName("address")
+    var address: Address? = Address()
 }
 
 
@@ -50,7 +49,6 @@ class Phone {
 
     @SerializedName("mobile")
     val mobile: String? = ""
-
 }
 
 
@@ -70,5 +68,4 @@ class Address {
 
     @SerializedName("zipCode")
     val zipCode: String? = ""
-
 }
