@@ -5,7 +5,6 @@ import com.google.gson.annotations.SerializedName
 typealias PhonebookListResponseFromRemote = Array<Phonebook>
 
 typealias  PhoneBookListResponse = Map<String?, Phonebook>
-//data class PhoneBookListResponse = Array<Phonebook>
 
 class Phonebook {
   @SerializedName("id")

@@ -7,7 +7,6 @@ import com.squareup.picasso.Picasso
 import com.example.johan.phonebook.R
 import com.squareup.picasso.Callback
 
-
 class PhoneBookListRecyclerViewViewHolder(val linearLyt: LinearLayout) : RecyclerView.ViewHolder(linearLyt) {
     private val myImageView: ImageView = itemView.findViewById<ImageView>(R.id.imgPhoto)
 

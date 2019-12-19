@@ -17,8 +17,8 @@ import android.widget.Toast
 import com.squareup.picasso.Picasso
 
 class PhoneBookDetailsActivity : AppCompatActivity() {
-    private var personId: String = ""
 
+    private var personId: String = ""
 
     private lateinit var recyclerViewDetails:RecyclerView
 
@@ -44,7 +44,6 @@ class PhoneBookDetailsActivity : AppCompatActivity() {
 
         //hide Action bar
         supportActionBar!!.hide()
-
     }
 
     private fun chargePerson(dataMap:PhoneBookListResponse){

@@ -14,31 +14,24 @@ class PhoneBookListAdapter(private val dataMap: PhoneBookListResponse, private v
     RecyclerView.Adapter<PhoneBookListRecyclerViewViewHolder>() {
     private val data = ArrayList(dataMap.values)
 
-    // Create new views (invoked by the layout manager)
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PhoneBookListRecyclerViewViewHolder {
-        // create a new view
         val linearLyt = LayoutInflater.from(parent.context)
             .inflate(R.layout.layout_phonebook_list_recycler_view, parent, false) as LinearLayout
-        // set the view's size, margins, paddings and layout parameters
         return PhoneBookListRecyclerViewViewHolder(linearLyt)
     }
 
-    // Replace the contents of a view (invoked by the layout manager)
     override fun onBindViewHolder(holder: PhoneBookListRecyclerViewViewHolder, position: Int) {
         holder.updateImageWithUrl(data[position].smallImageURL)
-//        holder.linearLyt.imgPhoto.setImageDrawable(context.getDrawable(R.drawable.img32))
         holder.linearLyt.txtName.text  = data[position].name
         holder.linearLyt.txtCompanyName.text        = data[position].companyName
-        //programacion evento click
         if (data[position].isFavorite!!)
             holder.linearLyt.imgStart.visibility = LinearLayout.VISIBLE
         else
             holder.linearLyt.imgStart.visibility = LinearLayout.INVISIBLE
-
         holder.linearLyt.setOnClickListener {
             clickListener.listItemClicked(data[position])
         }
     }
-    // Return the size of your dataset (invoked by the layout manager)
+
     override fun getItemCount() = data.size
 }
