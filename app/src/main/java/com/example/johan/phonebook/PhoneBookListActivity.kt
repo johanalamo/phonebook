@@ -7,11 +7,14 @@ import android.support.v7.widget.RecyclerView
 import android.arch.lifecycle.Observer
 import com.example.johan.phonebook.viewmodel.PhoneBookListViewModel
 import android.arch.lifecycle.ViewModelProviders
+import android.content.Intent
 import com.example.johan.phonebook.adapter.PhoneBookListAdapter
+import com.example.johan.phonebook.listener.PhoneBookListRecyclerViewClickListener
 import com.example.johan.phonebook.response.PhoneBookListResponse
+import com.example.johan.phonebook.response.Phonebook
 
 
-class PhoneBookListActivity : AppCompatActivity() {
+class PhoneBookListActivity : AppCompatActivity(), PhoneBookListRecyclerViewClickListener {
 
    private lateinit var recyclerView:RecyclerView
 
@@ -37,5 +40,10 @@ class PhoneBookListActivity : AppCompatActivity() {
       recyclerView.setHasFixedSize(false)
       recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
       recyclerView.adapter = PhoneBookListAdapter(sortedData, this)
+   }
+   override fun listItemClicked(phonebook:Phonebook){
+      val intent: Intent = Intent(this, PhoneBookDetailsActivity::class.java)
+      intent.putExtra("p_id", phonebook.id)
+      startActivity(intent)
    }
 }

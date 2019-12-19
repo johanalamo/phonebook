@@ -10,9 +10,10 @@ import android.support.v7.app.AppCompatActivity
 import com.example.johan.phonebook.response.PhoneBookListResponse
 import com.example.johan.phonebook.PhoneBookDetailsActivity
 import com.example.johan.phonebook.R
+import com.example.johan.phonebook.listener.PhoneBookListRecyclerViewClickListener
 import com.example.johan.phonebook.viewholder.PhoneBookListRecyclerViewViewHolder
 
-class PhoneBookListAdapter(private val dataMap: PhoneBookListResponse, private val context:AppCompatActivity) :
+class PhoneBookListAdapter(private val dataMap: PhoneBookListResponse, private val clickListener:PhoneBookListRecyclerViewClickListener) :
     RecyclerView.Adapter<PhoneBookListRecyclerViewViewHolder>() {
     private val data = ArrayList(dataMap.values)
 
@@ -27,7 +28,7 @@ class PhoneBookListAdapter(private val dataMap: PhoneBookListResponse, private v
 
     // Replace the contents of a view (invoked by the layout manager)
     override fun onBindViewHolder(holder: PhoneBookListRecyclerViewViewHolder, position: Int) {
-        holder.updateImageWithUrl(data[position].smallImageURL, context)
+        holder.updateImageWithUrl(data[position].smallImageURL)
 //        holder.linearLyt.imgPhoto.setImageDrawable(context.getDrawable(R.drawable.img32))
         holder.linearLyt.txtName.text  = data[position].name
         holder.linearLyt.txtCompanyName.text        = data[position].companyName
@@ -37,11 +38,9 @@ class PhoneBookListAdapter(private val dataMap: PhoneBookListResponse, private v
         else
             holder.linearLyt.imgStart.visibility = LinearLayout.INVISIBLE
 
-        holder.linearLyt.setOnClickListener({
-            val intent: Intent = Intent(this.context, PhoneBookDetailsActivity::class.java)
-            intent.putExtra("p_id", data[position].id)
-            this.context.startActivity(intent)
-        })
+        holder.linearLyt.setOnClickListener {
+            clickListener.listItemClicked(data[position])
+        }
     }
     // Return the size of your dataset (invoked by the layout manager)
     override fun getItemCount() = data.size
