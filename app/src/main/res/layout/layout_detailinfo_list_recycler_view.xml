@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:tools="http://schemas.android.com/tools"
               xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:id="@+id/linearLayoutOneProduct"
+              android:id="@+id/linearLayoutOnePhonebook"
               android:orientation="vertical"
               style="@style/stlPhoneBookListItem"
               android:layout_width="match_parent"
