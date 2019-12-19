@@ -12,24 +12,24 @@ import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.layout_phonebook_list_recycler_view.view.*
 
-class PhoneBookListAdapter(
+class PhonebookListRecyclerViewAdapter(
     private val dataMap: PhoneBookListResponse,
-    private val clickListener: PhoneBookListAdapter.ClickListener
+    private val clickListener: PhonebookListRecyclerViewAdapter.ClickListener
 ) :
-    RecyclerView.Adapter<PhoneBookListAdapter.ViewHolder>() {
+    RecyclerView.Adapter<PhonebookListRecyclerViewAdapter.ViewHolder>() {
 
     private val data = ArrayList(dataMap.values)
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): PhoneBookListAdapter.ViewHolder {
+    ): PhonebookListRecyclerViewAdapter.ViewHolder {
         val linearLyt = LayoutInflater.from(parent.context)
             .inflate(R.layout.layout_phonebook_list_recycler_view, parent, false) as LinearLayout
-        return PhoneBookListAdapter.ViewHolder(linearLyt)
+        return PhonebookListRecyclerViewAdapter.ViewHolder(linearLyt)
     }
 
-    override fun onBindViewHolder(holder: PhoneBookListAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: PhonebookListRecyclerViewAdapter.ViewHolder, position: Int) {
         holder.updateImageWithUrl(data[position].smallImageURL)
         holder.linearLyt.txtName.text = data[position].name
         holder.linearLyt.txtCompanyName.text = data[position].companyName

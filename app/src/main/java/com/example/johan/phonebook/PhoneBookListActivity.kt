@@ -8,13 +8,13 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import com.example.johan.phonebook.adapter.PhoneBookListAdapter
+import com.example.johan.phonebook.adapter.PhonebookListRecyclerViewAdapter
 import com.example.johan.phonebook.response.PhoneBookListResponse
 import com.example.johan.phonebook.response.Phonebook
 import com.example.johan.phonebook.viewmodel.PhoneBookListViewModel
 
 
-class PhoneBookListActivity : AppCompatActivity(), PhoneBookListAdapter.ClickListener {
+class PhoneBookListActivity : AppCompatActivity(), PhonebookListRecyclerViewAdapter.ClickListener {
 
     private lateinit var recyclerView: RecyclerView
 
@@ -45,7 +45,7 @@ class PhoneBookListActivity : AppCompatActivity(), PhoneBookListAdapter.ClickLis
         recyclerView = findViewById<RecyclerView>(idRecyclerView)
         recyclerView.setHasFixedSize(false)
         recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        recyclerView.adapter = PhoneBookListAdapter(sortedData, this)
+        recyclerView.adapter = PhonebookListRecyclerViewAdapter(sortedData, this)
     }
 
     override fun listItemClicked(phonebook: Phonebook) {
