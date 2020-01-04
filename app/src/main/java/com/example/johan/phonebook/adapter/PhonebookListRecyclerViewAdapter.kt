@@ -7,14 +7,13 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import com.example.johan.phonebook.R
 import com.example.johan.phonebook.response.PhoneBookListResponse
-import com.example.johan.phonebook.response.Phonebook
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.layout_phonebook_list_recycler_view.view.*
 
 class PhonebookListRecyclerViewAdapter(
     private val dataMap: PhoneBookListResponse,
-    private val clickListener: PhonebookListRecyclerViewAdapter.ClickListener
+    private val clickListener: ClickListener
 ) :
     RecyclerView.Adapter<PhonebookListRecyclerViewAdapter.ViewHolder>() {
 
@@ -23,10 +22,10 @@ class PhonebookListRecyclerViewAdapter(
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): PhonebookListRecyclerViewAdapter.ViewHolder {
+    ): ViewHolder {
         val linearLyt = LayoutInflater.from(parent.context)
             .inflate(R.layout.layout_phonebook_list_recycler_view, parent, false) as LinearLayout
-        return PhonebookListRecyclerViewAdapter.ViewHolder(linearLyt)
+        return ViewHolder(linearLyt)
     }
 
     override fun onBindViewHolder(holder: PhonebookListRecyclerViewAdapter.ViewHolder, position: Int) {
@@ -38,7 +37,7 @@ class PhonebookListRecyclerViewAdapter(
         else
             holder.linearLyt.imgStart.visibility = LinearLayout.INVISIBLE
         holder.linearLyt.setOnClickListener {
-            clickListener.listItemClicked(data[position])
+            clickListener.listItemClicked(data[position].id!! )
         }
     }
 
@@ -63,7 +62,7 @@ class PhonebookListRecyclerViewAdapter(
     }
 
     interface ClickListener {
-        fun listItemClicked(phonebook: Phonebook)
+        fun listItemClicked(personId: String)
     }
 
 }
