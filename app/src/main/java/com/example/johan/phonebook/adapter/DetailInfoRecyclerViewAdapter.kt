@@ -11,21 +11,20 @@ import kotlinx.android.synthetic.main.layout_detailinfo_list_recycler_view.view.
 
 
 class DetailInfoRecyclerViewAdapter(
-    private val data: ArrayList<DetailInfo>,
-    private val context: AppCompatActivity
+    private val data: ArrayList<DetailInfo>
 ) : RecyclerView.Adapter<DetailInfoRecyclerViewAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): DetailInfoRecyclerViewAdapter.ViewHolder {
+    ): ViewHolder {
         val linearLyt = LayoutInflater.from(parent.context).inflate(
             R.layout.layout_detailinfo_list_recycler_view,
             parent,
             false
         ) as LinearLayout
 
-        return DetailInfoRecyclerViewAdapter.ViewHolder(linearLyt)
+        return ViewHolder(linearLyt)
     }
 
     override fun onBindViewHolder(holder: DetailInfoRecyclerViewAdapter.ViewHolder, position: Int) {

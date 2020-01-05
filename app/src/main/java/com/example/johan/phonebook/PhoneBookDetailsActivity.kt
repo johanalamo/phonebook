@@ -135,7 +135,7 @@ class PhoneBookDetailsActivity : AppCompatActivity() {
         recyclerViewDetails.setHasFixedSize(false)
         recyclerViewDetails.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        recyclerViewDetails.adapter = DetailInfoRecyclerViewAdapter(data, this)
+        recyclerViewDetails.adapter = DetailInfoRecyclerViewAdapter(data)
     }
 
     fun pressButton(view: View) {
