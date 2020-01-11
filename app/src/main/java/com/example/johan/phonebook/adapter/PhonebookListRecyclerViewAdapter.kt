@@ -1,7 +1,9 @@
 package com.example.johan.phonebook.adapter
 
+import android.support.v7.widget.CardView
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
@@ -24,8 +26,8 @@ class PhonebookListRecyclerViewAdapter(
         viewType: Int
     ): ViewHolder {
         val linearLyt = LayoutInflater.from(parent.context)
-            .inflate(R.layout.layout_phonebook_list_recycler_view, parent, false) as LinearLayout
-        return ViewHolder(linearLyt)
+            .inflate(R.layout.layout_phonebook_list_recycler_view, parent, false)
+        return PhonebookListRecyclerViewAdapter.ViewHolder(linearLyt)
     }
 
     override fun onBindViewHolder(holder: PhonebookListRecyclerViewAdapter.ViewHolder, position: Int) {
@@ -46,7 +48,7 @@ class PhonebookListRecyclerViewAdapter(
 
     //Internal classes and interfaces
 
-    class ViewHolder(val linearLyt: LinearLayout) :
+    class ViewHolder(val linearLyt: View) :
         RecyclerView.ViewHolder(linearLyt) {
         private val myImageView: ImageView = itemView.findViewById<ImageView>(R.id.imgPhoto)
 
