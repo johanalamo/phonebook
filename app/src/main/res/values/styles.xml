@@ -3,27 +3,18 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorGray</item>
+        <item name="colorPrimary">@color/primaryColor</item>
 <!--        <item name="colorPrimary">@android:color/holo_red_light</item>     -->
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
 
 
-    <style name="stlPhoneBookListItem">
-        <item name="android:padding">@dimen/fourSep</item>
-        <item name="android:layout_margin">@dimen/oneSep</item>
-        <item name="android:background">@drawable/bg_phonebook_list_item</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:textAlignment">center</item>
-    </style>
-
     <style name="stlToolbarActivity">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
-        <item name="android:background">@color/colorGray</item>
+        <item name="android:background">@color/primaryColor</item>
         <item name="android:padding">@dimen/threeSep</item>
     </style>
 
@@ -47,7 +38,7 @@
         <item name="android:gravity">center_horizontal</item>
         <item name="android:textSize">@dimen/sizeTxtSubtitle</item>
         <item name="android:textColor">@android:color/white</item>
-        <item name="android:background">@color/colorGrayLight</item>
+        <item name="android:background">@color/primaryLightColor</item>
     </style>
 
 
@@ -89,7 +80,7 @@
     <style name="stlPhoneBookCompanyNameNormal">
         <item name="android:textSize">@dimen/sizeTxtNameCompanyNameList</item>
 <!--        <item name="android:textColor">@android:color/holo_red_dark</item>    -->
-        <item name="android:textColor">@color/colorGray</item>
+        <item name="android:textColor">@color/primaryColor</item>
     </style>
 
 
@@ -100,7 +91,7 @@
     </style>
     <style name="stlPhoneBookCompanyNameLarge">
         <item name="android:textSize">@dimen/sizeTxtNameCompanyNameDetail</item>
-        <item name="android:textColor">@color/colorGray</item>
+        <item name="android:textColor">@color/primaryColor</item>
     </style>
 
 
