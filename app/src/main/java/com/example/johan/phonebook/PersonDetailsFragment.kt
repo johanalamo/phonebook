@@ -13,6 +13,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.johan.phonebook.adapter.DetailInfoRecyclerViewAdapter
+import com.example.johan.phonebook.adapter.DetailsAdapter
 import com.example.johan.phonebook.response.DetailInfo
 import com.example.johan.phonebook.response.Phonebook
 import com.squareup.picasso.Picasso
@@ -58,7 +59,6 @@ class PersonDetailsFragment : Fragment() {
         view?.let {
             val dataMap = personList.value!!
 
-            val data = ArrayList(dataMap.values)
             val person = dataMap.get(this.personId)
             val res = person
 
@@ -78,7 +78,7 @@ class PersonDetailsFragment : Fragment() {
             else
                 isFavorite.setImageDrawable(context?.getDrawable(android.R.drawable.star_big_off))
 
-            var extra: ArrayList<DetailInfo> = getExtraData(person!!)
+            var extra: ArrayList<DetailInfo> = DetailsAdapter.getExtraData(person, context as Context)
 
             recyclerViewDetails = it.findViewById<RecyclerView>(R.id.rviewDetailInfo)
 
@@ -88,7 +88,7 @@ class PersonDetailsFragment : Fragment() {
             recyclerViewDetails.adapter = DetailInfoRecyclerViewAdapter(extra)
 
 
-            var url = person?.largeImageURL
+            var url = person.largeImageURL
 
 
             imgPerson = it.findViewById<ImageView>(R.id.imgPersonLarge)
@@ -96,58 +96,6 @@ class PersonDetailsFragment : Fragment() {
         }
 
         return view
-    }
-
-    private fun getExtraData(p: Phonebook): ArrayList<DetailInfo> {
-        var r: DetailInfo
-        var extra: ArrayList<DetailInfo> = ArrayList()
-        if (p.phone?.home != "") {
-            r = DetailInfo()
-            r.fieldName = getString(R.string.strPhone).toUpperCase() + ":"
-            r.extraInfo = getString(R.string.strHome)
-            r.value = p.phone!!.home
-            extra.add(r)
-        }
-
-        if (p.phone?.mobile != "") {
-            r = DetailInfo()
-            r.fieldName = getString(R.string.strPhone).toUpperCase() + ":"
-            r.extraInfo = getString(R.string.strMobile)
-            r.value = p.phone!!.mobile
-            extra.add(r)
-        }
-
-        if (p.phone?.work != "") {
-            r = DetailInfo()
-            r.fieldName = getString(R.string.strPhone).toUpperCase() + ":"
-            r.extraInfo = getString(R.string.strWork)
-            r.value = p.phone!!.work
-            extra.add(r)
-        }
-
-        if (p.address != null) {
-            r = DetailInfo()
-            r.fieldName = getString(R.string.strAddress).toUpperCase() + ":"
-            r.extraInfo = ""
-            r.value =
-                p.address!!.street + "\n" + p.address!!.city + ", " + p.address!!.state + " " + p.address!!.zipCode + ", " + p.address!!.country +
-                        extra.add(r)
-        }
-        if (p.birthdate != null) {
-            r = DetailInfo()
-            r.fieldName = getString(R.string.strBirthdate).toUpperCase() + ":"
-            r.extraInfo = ""
-            r.value = p.birthdate
-            extra.add(r)
-        }
-        if (p.emailAddress != null) {
-            r = DetailInfo()
-            r.fieldName = getString(R.string.strEmail).toUpperCase() + ":"
-            r.extraInfo = ""
-            r.value = p.emailAddress
-            extra.add(r)
-        }
-        return extra
     }
 
     companion object {

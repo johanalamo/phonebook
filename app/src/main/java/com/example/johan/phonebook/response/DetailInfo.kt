@@ -1,7 +1,7 @@
 package com.example.johan.phonebook.response
 
-class DetailInfo {
-    var fieldName: String? = ""
-    var value: String? = ""
-    var extraInfo: String? = ""
-}
+data class DetailInfo (
+    val fieldName: String? = "",
+    val value: String? = "",
+    val extraInfo: String? = ""
+)

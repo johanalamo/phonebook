@@ -10,6 +10,7 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.Toast
 import com.example.johan.phonebook.adapter.DetailInfoRecyclerViewAdapter
+import com.example.johan.phonebook.adapter.DetailsAdapter
 import com.example.johan.phonebook.response.DetailInfo
 import com.example.johan.phonebook.response.PhoneBookListResponse
 import com.example.johan.phonebook.response.Phonebook
@@ -53,7 +54,7 @@ class PhoneBookDetailsActivity : AppCompatActivity() {
         val person = dataMap.get(this.personId)
         println(data)
         showDetailsOnUi(person)
-        var extra: ArrayList<DetailInfo> = getExtraData(person!!)
+        var extra: ArrayList<DetailInfo> = DetailsAdapter.getExtraData(person!!, this)
         createRecyclerViewReviewList(extra)
 
         var url = person.largeImageURL
@@ -63,58 +64,6 @@ class PhoneBookDetailsActivity : AppCompatActivity() {
         Picasso.with(this).load(url).into(imgPerson)
 
 
-    }
-
-    private fun getExtraData(p: Phonebook): ArrayList<DetailInfo> {
-        var r: DetailInfo
-        var extra: ArrayList<DetailInfo> = ArrayList()
-        if (p.phone?.home != "") {
-            r = DetailInfo()
-            r.fieldName = getString(R.string.strPhone).toUpperCase() + ":"
-            r.extraInfo = getString(R.string.strHome)
-            r.value = p.phone!!.home
-            extra.add(r)
-        }
-
-        if (p.phone?.mobile != "") {
-            r = DetailInfo()
-            r.fieldName = getString(R.string.strPhone).toUpperCase() + ":"
-            r.extraInfo = getString(R.string.strMobile)
-            r.value = p.phone!!.mobile
-            extra.add(r)
-        }
-
-        if (p.phone?.work != "") {
-            r = DetailInfo()
-            r.fieldName = getString(R.string.strPhone).toUpperCase() + ":"
-            r.extraInfo = getString(R.string.strWork)
-            r.value = p.phone!!.work
-            extra.add(r)
-        }
-
-        if (p.address != null) {
-            r = DetailInfo()
-            r.fieldName = getString(R.string.strAddress).toUpperCase() + ":"
-            r.extraInfo = ""
-            r.value =
-                p.address!!.street + "\n" + p.address!!.city + ", " + p.address!!.state + " " + p.address!!.zipCode + ", " + p.address!!.country +
-                        extra.add(r)
-        }
-        if (p.birthdate != null) {
-            r = DetailInfo()
-            r.fieldName = getString(R.string.strBirthdate).toUpperCase() + ":"
-            r.extraInfo = ""
-            r.value = p.birthdate
-            extra.add(r)
-        }
-        if (p.emailAddress != null) {
-            r = DetailInfo()
-            r.fieldName = getString(R.string.strEmail).toUpperCase() + ":"
-            r.extraInfo = ""
-            r.value = p.emailAddress
-            extra.add(r)
-        }
-        return extra
     }
 
     fun showDetailsOnUi(res: Phonebook?) {
