@@ -1,6 +1,5 @@
 package com.example.johan.phonebook.adapter
 
-import android.support.v7.widget.CardView
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -11,7 +10,7 @@ import com.example.johan.phonebook.R
 import com.example.johan.phonebook.response.PhoneBookListResponse
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.layout_phonebook_list_recycler_view.view.*
+import kotlinx.android.synthetic.main.layout_phonebook_list_view_holder.view.*
 
 class PhonebookListRecyclerViewAdapter(
     private val dataMap: PhoneBookListResponse,
@@ -26,7 +25,7 @@ class PhonebookListRecyclerViewAdapter(
         viewType: Int
     ): ViewHolder {
         val linearLyt = LayoutInflater.from(parent.context)
-            .inflate(R.layout.layout_phonebook_list_recycler_view, parent, false)
+            .inflate(R.layout.layout_phonebook_list_view_holder, parent, false)
         return PhonebookListRecyclerViewAdapter.ViewHolder(linearLyt)
     }
 
