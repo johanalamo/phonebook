@@ -92,7 +92,7 @@ class PersonDetailsFragment : Fragment() {
 
 
             imgPerson = it.findViewById<ImageView>(R.id.imgPersonLarge)
-            Picasso.with(context).load(url).into(imgPerson)
+            Picasso.get().load(url).into(imgPerson)
         }
 
         return view

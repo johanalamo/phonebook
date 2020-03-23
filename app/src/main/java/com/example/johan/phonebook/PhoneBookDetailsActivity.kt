@@ -61,7 +61,7 @@ class PhoneBookDetailsActivity : AppCompatActivity() {
 
 
         imgPerson = findViewById<ImageView>(R.id.imgPersonLarge)
-        Picasso.with(this).load(url).into(imgPerson)
+        Picasso.get().load(url).into(imgPerson)
 
 
     }
